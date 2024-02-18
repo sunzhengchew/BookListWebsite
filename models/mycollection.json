@@ -4,10 +4,10 @@
       "name": "Best Sellers",
       "books": [
         {
-          "name": "The Great Gatsby",
-          "author": "F. Scott Fitzgerald",
-          "genre": "Classic",
-          "publicYear": 1925
+          "name": "One Hundred Years of Solitude",
+          "author": "Gabriel García Márquez",
+          "genre": "Magic realism",
+          "publicYear": 1967
         },
         {
           "name": "To Kill a Mockingbird",
