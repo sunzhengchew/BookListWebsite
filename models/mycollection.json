@@ -1,0 +1,41 @@
+{
+  "bookLists": [
+    {
+      "name": "Best Sellers",
+      "books": [
+        {
+          "name": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "genre": "Classic",
+          "publicYear": 1925
+        },
+        {
+          "name": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "genre": "Fiction",
+          "publicYear": 1960
+        },
+        // Add more books as needed
+      ]
+    },
+    {
+      "name": "Science Fiction",
+      "books": [
+        {
+          "name": "Dune",
+          "author": "Frank Herbert",
+          "genre": "Science Fiction",
+          "publicn Year": 1965
+        },
+        {
+          "name": "Neuromancer",
+          "author": "William Gibson",
+          "genre": "Cyberpunk",
+          "publicationYear": 1984
+        },
+        // Add more books as needed
+      ]
+    }
+    // Add more book lists as needed
+  ]
+}
