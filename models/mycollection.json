@@ -14,7 +14,7 @@
           "author": "Harper Lee",
           "genre": "Fiction",
           "publicYear": 1960
-        },
+        }
         // Add more books as needed
       ]
     },
@@ -25,13 +25,13 @@
           "name": "Dune",
           "author": "Frank Herbert",
           "genre": "Science Fiction",
-          "publicn Year": 1965
+          "publicYear": 1965
         },
         {
           "name": "Neuromancer",
           "author": "William Gibson",
           "genre": "Cyberpunk",
-          "publicationYear": 1984
+          "publicYear": 1984
         },
         // Add more books as needed
       ]
