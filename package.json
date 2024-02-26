@@ -1,0 +1,24 @@
+{
+  "name": "booklist-app",
+  "version": "0.0.1",
+  "description": "A little booklist maker",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "winston": "^3.7.2",
+    "lowdb": "^7.0.1",
+    "express-handlebars": "^7.1.2"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
