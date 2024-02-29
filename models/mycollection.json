@@ -1,7 +1,7 @@
 {
   "bookLists": [
     {
-      "name": "Best Sellers",
+      "name": "Classic",
       "books": [
         {
           "name": "One Hundred Years of Solitude",
@@ -10,28 +10,34 @@
           "publicYear": 1967
         },
         {
-          "name": "To Kill a Mockingbird",
-          "author": "Harper Lee",
+          "name": "The Catcher in the Rye",
+          "author": "J.D. Salinger",
           "genre": "Fiction",
-          "publicYear": 1960
+          "publicYear": 1951
+        },
+        {
+          "name": "Adventures of Huckleberry Finn",
+          "author": "J.D. Salinger",
+          "genre": "Fiction",
+          "publicYear": 1951
         }
         // Add more books as needed
       ]
     },
     {
-      "name": "Fiction",
+      "name": "Novel",
       "books": [
         {
-          "name": "Dune",
-          "author": "Frank Herbert",
-          "genre": "Science Fiction",
-          "publicYear": 1965
+          "name": "Before the Coffee Gets Cold",
+          "author": "Toshikazu Kawaguchi",
+          "genre": "Magical Realism",
+          "publicYear": 2015
         },
         {
-          "name": "Neuromancer",
-          "author": "William Gibson",
-          "genre": "Cyberpunk",
-          "publicYear": 1984
+          "name": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "genre": "Bildungsroman",
+          "publicYear": 1960
         },
         // Add more books as needed
       ]
