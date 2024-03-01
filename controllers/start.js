@@ -3,13 +3,16 @@ import logger from "../utils/logger.js";
 import creator from "../models/info.js";
 
 const start = {
-
   createView(request, response) {
-    const info = creator.getAppInfo();
-    logger.debug(info);
+    logger.info("Start page loading!");
     
-    logger.info("Start page loading!")
-    response.json(info);   
+    const viewData = {
+      title: "Welcome to the Booklist app!",
+      info: creator.getAppInfo()
+    };
+    
+    //logger.debug(viewData);
+    response.render('start', viewData);   
   },
 };
 
