@@ -1,47 +1,74 @@
 {
   "bookLists": [
     {
+      "id": "01",
       "name": "Classic",
       "books": [
         {
+          "id": "04",
           "name": "One Hundred Years of Solitude",
           "author": "Gabriel García Márquez",
           "genre": "Magic realism",
-          "publicYear": 1967
+          "publicYear": "1967"
         },
         {
+          "id": "05",
           "name": "The Catcher in the Rye",
           "author": "J.D. Salinger",
           "genre": "Bildungsroman",
-          "publicYear": 1951
+          "publicYear": "1951"
         },
         {
+          "id": "06",
           "name": "Adventures of Huckleberry Finn",
           "author": "J.D. Salinger",
           "genre": "Fiction",
-          "publicYear": 1951
-        }
+          "publicYear": "1951"
+        },
         // Add more books as needed
       ]
     },
     {
+      "id": "02",
       "name": "Novel",
       "books": [
         {
+          "id": "07",
           "name": "Before the Coffee Gets Cold",
           "author": "Toshikazu Kawaguchi",
           "genre": "Magical Realism",
-          "publicYear": 2015
+          "publicYear": "2015"
         },
         {
+          "id": "08",
           "name": "To Kill a Mockingbird",
           "author": "Harper Lee",
           "genre": "Bildungsroman",
-          "publicYear": 1960
+          "publicYear": "1960"
+        },
+        // Add more books as needed
+      ]
+    },
+    {
+      "id": "03",
+      "name": "Manga",
+      "books": [
+        {
+          "id": "09",
+          "name": "Before the Coffee Gets Cold",
+          "author": "Toshikazu Kawaguchi",
+          "genre": "Magical Realism",
+          "publicYear": "2015"
+        },
+        {
+          "id": "10",
+          "name": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "genre": "Bildungsroman",
+          "publicYear": "1960"
         },
         // Add more books as needed
       ]
     }
-    // Add more book lists as needed
   ]
 }
