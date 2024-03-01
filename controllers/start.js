@@ -1,9 +1,15 @@
 'use strict';
-import appStore from "../models/app-store.js";
+import logger from "../utils/logger.js";
+import creator from "../models/info.js";
 
 const start = {
+
   createView(request, response) {
-    response.send('Welcome to the Booklist app!');   
+    const info = creator.getAppInfo();
+    logger.debug(info);
+    
+    logger.info("Start page loading!")
+    response.json(info);   
   },
 };
 
