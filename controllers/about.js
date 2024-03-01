@@ -8,8 +8,13 @@ const about = {
     const info = creator.getAppInfo();
     logger.debug(info);
     
-    logger.info("Start page loading!")
-    response.json(info);   
+    const viewData = {
+      title: "Welcome to the Playlist app!",
+      info: creator.getAppInfo()
+    };
+    
+    logger.info("About page loading!")
+    response.render('about', viewData);   
   },
 };
 
