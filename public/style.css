@@ -11,23 +11,3 @@ body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
   background-color: #E2EB98;
-}
-
-a:link{
-    text-decoration: none;
-}
-
-a:visited{
-    color:blue;
-}
-
-a:hover{
-    text-decoration:underline;
-    color: black;
-    text-shadow: 1px 1px white;
-    background-color: gray;
-}
-
-a:active{
-    color:black;
-}
