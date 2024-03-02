@@ -12,3 +12,10 @@ body {
   margin: 2em;
   background-image:url(https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/back.jpg.avif?v=1709352742838);
 }
+
+.content{
+    background-color:#D18F75;
+    border-radius:8px;
+    border-style:outset;
+    border-color:
+}
