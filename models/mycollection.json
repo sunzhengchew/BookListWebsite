@@ -55,17 +55,17 @@
       "books": [
         {
           "id": "09",
-          "name": "Before the Coffee Gets Cold",
-          "author": "Toshikazu Kawaguchi",
-          "genre": "Magical Realism",
-          "publicYear": "2015"
+          "name": "One Piece",
+          "author": "Eiichiro Oda",
+          "genre": "Adventure",
+          "publicYear": "since 1997"
         },
         {
           "id": "10",
-          "name": "To Kill a Mockingbird",
-          "author": "Harper Lee",
-          "genre": "Bildungsroman",
-          "publicYear": "1960"
+          "name": "Sasaki to Miyano",
+          "author": "Shō Harusono",
+          "genre": "Comedy",
+          "publicYear": "since 2016"
         },
         // Add more books as needed
       ]
