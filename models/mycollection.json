@@ -2,7 +2,7 @@
   "bookListsCollection": [
     {
       "id": "01",
-      "name": "Classic",
+      "category": "Classic",
       "books": [
         {
           "id": "04",
@@ -29,7 +29,7 @@
     },
     {
       "id": "02",
-      "name": "Novel",
+      "category": "Novel",
       "books": [
         {
           "id": "07",
@@ -49,7 +49,7 @@
     },
     {
       "id": "03",
-      "name": "Manga",
+      "category": "Manga",
       "books": [
         {
           "id": "09",

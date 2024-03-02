@@ -5,8 +5,8 @@ import JsonStore from './json-store.js';
 
 const booklistStore = {
 
-  store: new JsonStore('./models/mycollection.json', { bookLists: [] }),
-  collection: 'bookLists',
+  store: new JsonStore('./models/mycollection.json', { bookListsCollection: [] }),
+  collection: 'bookListsCollection',
   array: 'books',
 
   getAllBooklists() {

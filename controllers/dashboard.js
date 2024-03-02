@@ -12,7 +12,7 @@ const dashboard = {
       booklists: booklistStore.getAllBooklists()
     };
     
-    logger.debug(viewData.booklists);
+    logger.debug(viewData.bookListsCollection);
     
     response.render('dashboard', viewData);
   },
