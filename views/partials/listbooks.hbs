@@ -1,0 +1,29 @@
+{{#if singleBooklist.books}}
+
+  <table class="ui fixed striped table">
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each singleBooklist.books}}
+        <tr>
+          <td>
+            {{name}}
+          </td>
+          <td>
+            {{author}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  {{else}}
+    <h3 class="ui message">
+      Empty Booklist!
+    </h3>
+
+{{/if}}
