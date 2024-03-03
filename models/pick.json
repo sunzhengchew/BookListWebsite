@@ -1,8 +1,9 @@
-"pickBook": [
+{
+  "pickBook": [
     {
       "id": "01",
-      "category": "Classic",
-      "books": [
+      "bookName": "Moby-Dick",
+      "details": [
         {
           "id": "04",
           "name": "One Hundred Years of Solitude",
