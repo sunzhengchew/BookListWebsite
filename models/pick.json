@@ -1,0 +1,28 @@
+"pickBook": [
+    {
+      "id": "01",
+      "category": "Classic",
+      "books": [
+        {
+          "id": "04",
+          "name": "One Hundred Years of Solitude",
+          "author": "Gabriel García Márquez",
+          "genre": "Magic realism",
+          "publicYear": "1967"
+        },
+        {
+          "id": "05",
+          "name": "The Catcher in the Rye",
+          "author": "J.D. Salinger",
+          "genre": "Bildungsroman",
+          "publicYear": "1951"
+        },
+        {
+          "id": "06",
+          "name": "Adventures of Huckleberry Finn",
+          "author": " Mark Twain",
+          "genre": "Fiction",
+          "publicYear": "1951"
+        }
+      ]
+    },
