@@ -1,6 +1,6 @@
 {{#if singlePicklist.details}}
 {{#each singlePicklist.details}}
-<body style="background-image:url(https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/back.jpg.avif?v=1709352742838);">
+<body style="background-image:url({{background}});">
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
     <div class="image">
     <img src="{{image}}">
@@ -22,6 +22,6 @@
     <h3 class="ui message">
       Empty Picklist!
     </h3>
-</body>  
+  </body>
 {{/each}}
 {{/if}}
