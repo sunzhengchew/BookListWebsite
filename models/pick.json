@@ -8,7 +8,8 @@
           "id":"04",
           "author": "Herman Melville",
           "genre": "Adventure Fiction",
-          "publicYear": "1851"
+          "publicYear": "1851",
+          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
         }
       ]
     },
@@ -20,7 +21,9 @@
           "id":"05",
           "author": "George R. R. Martin & Martin G R R",
           "genre": "High Fantasy",
-          "publicYear": "1991"
+          "publicYear": "1991",
+          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
+          
         }
       ]
     },
@@ -32,7 +35,8 @@
           "id":"06",
           "author": "Agatha Christie",
           "genre": "Mystery",
-          "publicYear": "1939"
+          "publicYear": "1939",
+          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
         }
       ]
     }

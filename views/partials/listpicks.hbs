@@ -1,58 +1,28 @@
-{{#if singleBooklist.books}}
-
-  <table class="ui selectable celled inverted teal table">
-    <thead>
-      <tr>
-        <th><i class="book icon"></i>Book Name</th>
-        <th><i class="pencil alternate icon"></i>Author</th>
-        <th><i class="tag icon"></i>Genre</th>
-        <th><i class="calendar times outline icon"></i>Publication</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each singleBooklist.books}}
-        <tr>
-          <td>
-            {{name}}
-          </td>
-          <td>
-            {{author}}
-          </td>
-          <td>
-            {{genre}}
-          </td>
-          <td>
-            {{publicYear}}
-          </td>
-        </tr>
-      {{/each}}
-    </tbody>
-  </table>
-
-  {{else}}
-    <h3 class="ui message">
-      Empty Booklist!
-    </h3>
-
-{{/if}}
-
+{{#if singlePicklist.details}}
+{{#each singlePicklist.details}}
 <div class="ui card">
   <div class="image">
     <img src="">
   </div>
   <div class="content">
-    <a class="header">Kristy</a>
+    <a class="header">{{bookName}}({{genre}})</a>
     <div class="meta">
-      <span class="date">Joined in 2013</span>
+      <span class="date">{{author}}</span>
     </div>
     <div class="description">
-      Kristy is an art director living in New York.
+      {{descirpt}}
     </div>
   </div>
   <div class="extra content">
     <a>
-      <i class="user icon"></i>
-      22 Friends
+      <i class="calendar outline icon"></i>
+      Public at: {{publicYear}}
     </a>
   </div>
 </div>
+  {{else}}
+    <h3 class="ui message">
+      Empty Picklist!
+    </h3>
+
+{{/if}}
