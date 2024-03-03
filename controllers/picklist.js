@@ -3,18 +3,18 @@
 import logger from '../utils/logger.js';
 import mypick from '../models/pick.js';
 
-const picklist = {
+const picklist = {                                    // Creating an object named 'picklist' which contains methods 'createView'
   createView(request, response) {
     const picklistId = request.params.id;
     logger.debug('Picklist id = ' + picklistId);
     
     const viewData = {
       title: 'Picklist',
-      singlePicklist: mypick.getPicklist(picklistId)
+      singlePicklist: mypick.getPicklist(picklistId) // Retrieving a specific picklist using the provided picklistId
     };
 
-    response.render('picklist', viewData);
+    response.render('picklist', viewData);  // Rendering the 'picklist' view with the specified data
   },
 };
 
-export default picklist;
+export default picklist; // Exporting the 'picklist' object 

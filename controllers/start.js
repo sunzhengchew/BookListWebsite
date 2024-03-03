@@ -2,13 +2,13 @@
 import logger from "../utils/logger.js";
 import creator from "../models/info.js";
 
-const start = {
+const start = {                                // Creating an object named 'start' which contains methods 'createView'
   createView(request, response) {
     logger.info("Start page loading!");
     
     const viewData = {
       title: "Welcome to the Booklist app!",
-      info: creator.getAppInfo()
+      info: creator.getAppInfo() // Retrieving application information using the 'getAppInfo' method from info.js
     };
     
     //logger.debug(viewData);
@@ -16,4 +16,4 @@ const start = {
   },
 };
 
-export default start;
+export default start; // Exporting the 'picklist' object 
