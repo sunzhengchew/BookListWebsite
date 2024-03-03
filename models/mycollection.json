@@ -10,21 +10,23 @@
           "author": "Gabriel García Márquez",
           "genre": "Magic realism",
           "publicYear": "1967",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ohs.jpg?v=1709494287938"
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ohs.jpg?v=1709496478827"
         },
         {
           "id": "05",
           "name": "The Catcher in the Rye",
           "author": "J.D. Salinger",
           "genre": "Bildungsroman",
-          "publicYear": "1951"
+          "publicYear": "1951",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/catch.png?v=1709496691971"
         },
         {
           "id": "06",
           "name": "Adventures of Huckleberry Finn",
           "author": " Mark Twain",
           "genre": "Fiction",
-          "publicYear": "1951"
+          "publicYear": "1951",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
         }
       ]
     },
