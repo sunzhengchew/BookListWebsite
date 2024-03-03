@@ -1,10 +1,11 @@
 {{#if singleBooklist.books}}
 
-  <table class="ui sortable celled selectable celled inverted brown table">
+  <table class="ui selectable celled inverted brown table">
     <thead>
       <tr>
         <th><i class="book icon"></i>Book Name</th>
         <th><i class="pencil alternate icon"></i>Author</th>
+        <th><i class="image icon"></i>Book Cover</th>
         <th><i class="tag icon"></i>Genre</th>
         <th><i class="calendar times outline icon"></i>Publication</th>
       </tr>
@@ -17,6 +18,9 @@
           </td>
           <td>
             {{author}}
+          </td>
+          <td>
+            {{cover}}
           </td>
           <td>
             {{genre}}
