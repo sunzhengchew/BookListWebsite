@@ -9,7 +9,7 @@
           "author": "Herman Melville",
           "genre": "Adventure Fiction",
           "publicYear": "1851",
-          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
+          "descript":"A timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
         }
       ]
     },
@@ -19,10 +19,10 @@
       "details": [
         {
           "id":"05",
-          "author": "George R. R. Martin & Martin G R R",
+          "author": "George R. R. Martin",
           "genre": "High Fantasy",
           "publicYear": "1991",
-          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
+          "descript":"A sprawling high fantasy series renowned for its complex characters, intricate political plots, and moral ambiguity, leaving an enduring impact on the fantasy genre."
           
         }
       ]
@@ -36,7 +36,7 @@
           "author": "Agatha Christie",
           "genre": "Mystery",
           "publicYear": "1939",
-          "descript":"a timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature."
+          "descript":"A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative"
         }
       ]
     }
