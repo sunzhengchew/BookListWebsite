@@ -1,10 +1,12 @@
 {
+  // An array containing information about different books
   "pickBook": [
     {
-      "id": "01",
-      "bookName": "Moby-Dick",
-      "details": [
+      "id": "01",// Unique identifier for the book
+      "bookName": "Moby-Dick",// The title of the book
+      "details": [ // Details including author, genre, and publication year
         {
+          "id":"04",// Unique identifier for the book details
           "author": "Herman Melville",
           "genre": "Adventure Fiction",
           "publicYear": "1851"
@@ -13,14 +15,25 @@
     },
     {
       "id": "02",
-      "bookName": "Novel",
+      "bookName": "A Song of Ice and Fire",
       "details": [
         {
-          "id": "07",
-          "name": "Before the Coffee Gets Cold",
-          "author": "Toshikazu Kawaguchi",
-          "genre": "Magical Realism",
-          "publicYear": "2015"
+          "id":"05",
+          "author": "George R. R. Martin & Martin G R R",
+          "genre": "High Fantasy",
+          "publicYear": "1991"
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "bookName": "And Then There Were None",
+      "details": [
+        {
+          "id":"06",
+          "author": "Agatha Christie",
+          "genre": "Mystery",
+          "publicYear": "1939"
         }
       ]
     }

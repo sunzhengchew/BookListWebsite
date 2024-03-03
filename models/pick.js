@@ -3,19 +3,19 @@
 import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
 
-const recommend = {
+const mypick = {
 
-  store: new JsonStore('./models/mycollection.json', { bookListsCollection: [] }),
-  collection: 'recommendCollection',
-  array: 'books',
+  store: new JsonStore('./models/mycollection.json', { pickBook: [] }),
+  collection: 'pickCollection',
+  array: 'details',
 
-  getAllBooklists() {
+  getAllPickklists() {
     return this.store.findAll(this.collection);
   },
-  getBooklist(id) {
-    return this.store.findOneBy(this.collection, (booklist => booklist.id === id));
+  getPicklist(id) {
+    return this.store.findOneBy(this.collection, (picklist => picklist.id === id));
 },
 
 };
 
-export default recommend;
+export default mypick;
