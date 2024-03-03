@@ -8,12 +8,14 @@ import dashboard from './controllers/dashboard.js';
 import about from './controllers/about.js';
 import pickboard from './controllers/pickboard.js';
 import booklist from './controllers/booklist.js';
+import picklist from './controllers/picklist.js';
 
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/about', about.createView);
 router.get('/pickboard', pickboard.createView);
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
+router.get('/booklist/:id', booklist.createView);
 router.get('/booklist/:id', booklist.createView);
 
 

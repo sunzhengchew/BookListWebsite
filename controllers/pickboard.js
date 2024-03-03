@@ -9,10 +9,10 @@ const pickboard = {
     
     const viewData = {
       title: "Picklist of Book",
-      booklists: mypick.getAllPicklists()
+      picklists: mypick.getAllPicklists()
     };
     
-    logger.debug(viewData.mypick);
+    logger.debug(viewData.pickBookCollection);
     
     response.render('pickboard', viewData);
   },

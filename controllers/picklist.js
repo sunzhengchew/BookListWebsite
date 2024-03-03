@@ -13,7 +13,7 @@ const picklist = {
       singlePicklist: mypick.getPicklist(picklistId)
     };
 
-    response.render('booklist', viewData);
+    response.render('picklist', viewData);
   },
 };
 
