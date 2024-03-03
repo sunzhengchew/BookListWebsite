@@ -16,7 +16,7 @@ router.get('/about', about.createView);
 router.get('/pickboard', pickboard.createView);
 router.get('/error', (request, response) => response.status(404).end('Page not found.'));
 router.get('/booklist/:id', booklist.createView);
-router.get('/booklist/:id', booklist.createView);
+router.get('/picklist/:id', picklist.createView);
 
 
 export default router;
