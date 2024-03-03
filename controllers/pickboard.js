@@ -12,7 +12,7 @@ const pickboard = {
       booklists: mypick.getAllPicklists()
     };
     
-    logger.debug(viewData.pickBook);
+    logger.debug(viewData.mypick);
     
     response.render('pickboard', viewData);
   },
