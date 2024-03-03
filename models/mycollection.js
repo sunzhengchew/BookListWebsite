@@ -12,6 +12,9 @@ const booklistStore = {
   getAllBooklists() {
     return this.store.findAll(this.collection);
   },
+  getBooklist(id) {
+    return this.store.findOneBy(this.collection, (booklist => booklist.id === id));
+},
 
 };
 
