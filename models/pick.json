@@ -5,25 +5,24 @@
       "bookName": "Moby-Dick",
       "details": [
         {
-          "id": "04",
-          "name": "One Hundred Years of Solitude",
-          "author": "Gabriel García Márquez",
-          "genre": "Magic realism",
-          "publicYear": "1967"
-        },
-        {
-          "id": "05",
-          "name": "The Catcher in the Rye",
-          "author": "J.D. Salinger",
-          "genre": "Bildungsroman",
-          "publicYear": "1951"
-        },
-        {
-          "id": "06",
-          "name": "Adventures of Huckleberry Finn",
-          "author": " Mark Twain",
-          "genre": "Fiction",
-          "publicYear": "1951"
+          "author": "Herman Melville",
+          "genre": "Adventure Fiction",
+          "publicYear": "1851"
         }
       ]
     },
+    {
+      "id": "02",
+      "bookName": "Novel",
+      "details": [
+        {
+          "id": "07",
+          "name": "Before the Coffee Gets Cold",
+          "author": "Toshikazu Kawaguchi",
+          "genre": "Magical Realism",
+          "publicYear": "2015"
+        }
+      ]
+    }
+    ]
+}
