@@ -2,23 +2,18 @@
 
 <section class="ui left aligned middle aligned segment">
   
-    <h2>Booklist App Dashboard</h2>
+  <h2>Booklist Collection Dashboard</h2>
 
-      <section class="ui left aligned middle aligned segment">
-        <h3 class="ui header">
-          {{booklists.0.category}}
-        </h3>
-      </section>
+  {{#each booklists}}
   
-      <section class="ui left aligned middle aligned segment">
-        <h3 class="ui header">
-          {{booklists.1.category}}
-        </h3>
-      </section>
+    <section class="ui left aligned middle aligned segment">
 
-      <section class="ui left aligned middle aligned segment">
-        <h3 class="ui header">
-          {{booklists.2.category}}
-        </h3>
-      </section> 
+      <h3 class="ui header">
+        {{category}}
+      </h3>     
+      <a href="/booklist/{{id}}"> <i class="hand point right outline icon"></i>My Collection </a>
+    </section>
+  
+  {{/each}}
+
 </section>
