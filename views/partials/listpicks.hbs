@@ -1,5 +1,34 @@
 {{#if singlePicklist.details}}
-{{#each singlePicklist.details}}
+
+  <div class="ui card">
+      {{#each singlePicklist.details}}
+      <div class="image">
+    <img src="bruh">
+  </div>
+  <div class="content">
+    <a class="header">{{bookName}}({{genre}})</a>
+    <div class="meta">
+      <span class="date">{{author}}</span>
+    </div>
+    <div class="description">
+      {{descirpt}}
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="calendar outline icon"></i>
+      Public at: {{publicYear}}
+    </a>
+  </div>
+</div>
+
+  {{else}}
+    <h3 class="ui message">
+      Empty Booklist!
+    </h3>
+
+{{/if}}
+
 <div class="ui card">
   <div class="image">
     <img src="bruh">
@@ -24,5 +53,3 @@
     <h3 class="ui message">
       Empty Picklist!
     </h3>
-
-{{/if}}
