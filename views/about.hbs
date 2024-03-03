@@ -1,62 +1,32 @@
 {{> menu id="about"}}
 <style>
-  h2{
-    
+  .title{
+    position:relative;
+    left:30%;
+    up:10%;
   }
 </style>
 <section class="ui left aligned middle aligned segment">
-<div class="content">
     <h2>About the Booklist App</h2>
-      <p>
-        Creator info:
-      </p><div class="ui five statistics" style="margin-top: 1em;">
-    
-    <div class="statistic">
-      <div class="value">
-        <i class="music icon"></i> 
-      </div>
-      <div class="label">
-        App Title: <br>
-        {{info.appTitle}}
-      </div>
-    </div>
-    
-    <div class="statistic">
-      <div class="value">
-        <i class="code branch icon"></i> 
-      </div>
-      <div class="label">
-        App Version: <br>
-        Version {{info.version}}
-      </div>
-    </div>    
-    <div class="statistic">
-      <div class="value">
-        <i class="map pin icon"></i> 
-      </div>
-      <div class="label">
-        Made in: <br>
-        {{info.location}}
-      </div>
-    </div>    
-    <div class="statistic">
-      <div class="value">
-        <i class="user icon"></i> 
-      </div>
-      <div class="label">
-        Created by: <br>
-        {{info.creators.0.name}}
-      </div>
-    </div> 
-    <div class="statistic">
-      <div class="value">
-        <i class="user plus icon"></i> 
-      </div>
-      <div class="label">
-        With help from: <br>
-        {{info.creators.1.name}}
-      </div>
-    </div> 
+    <div class="ui card">
+  <h3 class="title">The Creator</h3>    
+  <div class="image">
+    <img src="https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/avatar.png?v=1709433470326"class="ui centered image" width=400 height=300>
   </div>
-   </div>  
+  <div class="content">
+    <a class="header">Kristy</a>
+    <div class="meta">
+      <span class="date">Joined in 2013</span>
+    </div>
+    <div class="description">
+      Kristy is an art director living in New York.
+    </div>
+  </div>
+  <div class="extra content">
+    <a>
+      <i class="user icon"></i>
+      22 Friends
+    </a>
+  </div>
+</div>
 </section>
