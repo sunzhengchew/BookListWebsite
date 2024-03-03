@@ -27,7 +27,7 @@
           "publicYear": "1991",
           "descript":"A sprawling high fantasy series renowned for its complex characters, intricate political plots, and moral ambiguity, leaving an enduring impact on the fantasy genre.",
           "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/song.jpg?v=1709491994923",
-          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/songback.jpg?v=1709493890354"
+          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/songback.jpg?v=1709494164255"
         }
       ]
     },
@@ -41,7 +41,8 @@
           "genre": "Mystery",
           "publicYear": "1939",
           "descript":"A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602"
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602",
+          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
         }
       ]
     }
