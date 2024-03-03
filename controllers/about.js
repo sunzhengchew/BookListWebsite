@@ -2,21 +2,21 @@
 import logger from "../utils/logger.js";
 import creator from "../models/info.js";
 
-// Creating an object named 'about' which contains a method 'createView'
-const about = {
 
-  createView(request, response) {
-    const info = creator.getAppInfo();
-    logger.debug(info);
+const about = {                          // Creating an object named 'about' which contains a method 'createView'
+  
+  createView(request, response) {        // Method to handle rendering the 'about' view
+    const info = creator.getAppInfo();   // Fetching application information using the creator object
+    logger.debug(info);                  // Logging the application information to the console
     
-    const viewData = {
-      title: "Welcome to the Playlist app!",
-      info: creator.getAppInfo()
+    const viewData = {                   // Setting up data to be passed to the view
+      title: "Welcome to the Playlist app!", 
+      info: creator.getAppInfo()         // Using creator to get app information
     };
     
-    logger.info("About page loading!")
-    response.render('about', viewData);   
+    logger.info("About page loading!")   // Logging an informational message about the about page loading
+    response.render('about', viewData);  // Rendering the 'about' view with the provided data
   },
 };
 
-export default about;
+export default about;                    // Exporting the 'about' object for external usage
