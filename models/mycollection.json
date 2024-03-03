@@ -39,14 +39,16 @@
           "name": "Before the Coffee Gets Cold",
           "author": "Toshikazu Kawaguchi",
           "genre": "Magical Realism",
-          "publicYear": "2015"
+          "publicYear": "2015",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/coffee.jpeg?v=1709497167936"
         },
         {
           "id": "08",
           "name": "To Kill a Mockingbird",
           "author": "Harper Lee",
           "genre": "Bildungsroman",
-          "publicYear": "1960"
+          "publicYear": "1960",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/bird%20copy.jpg?v=1709497167581"
         }
       ]
     },
@@ -59,14 +61,16 @@
           "name": "One Piece",
           "author": "Eiichiro Oda",
           "genre": "Adventure",
-          "publicYear": "since 1997"
+          "publicYear": "since 1997",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/onepice.jpeg?v=1709497171493"
         },
         {
           "id": "10",
           "name": "Sasaki to Miyano",
           "author": "Shō Harusono",
           "genre": "Comedy",
-          "publicYear": "since 2016"
+          "publicYear": "since 2016",
+          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ssk.jpeg?v=1709497310931"
         }
       ]
     }

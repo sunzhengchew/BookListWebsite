@@ -2,6 +2,7 @@
 import logger from "../utils/logger.js";
 import creator from "../models/info.js";
 
+// Creating an object named 'about' which contains a method 'createView'
 const about = {
 
   createView(request, response) {
