@@ -10,7 +10,7 @@ const booklist = {
     
     const viewData = {
       title: 'Booklist',
-      singlePlaylist: booklistStore.getBooklist(booklistId)
+      singleBooklist: booklistStore.getBooklist(booklistId)
     };
 
     response.render('booklist', viewData);

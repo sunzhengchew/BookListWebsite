@@ -1,10 +1,12 @@
 {{#if singleBooklist.books}}
 
-  <table class="ui fixed striped table">
+  <table class="ui sortable celled selectable celled inverted brown table">
     <thead>
       <tr>
-        <th>Book Name</th>
-        <th>Author</th>
+        <th><i class="book icon"></i>Book Name</th>
+        <th><i class="pencil alternate icon"></i>Author</th>
+        <th><i class="tag icon"></i>Genre</th>
+        <th><i class="calendar times outline icon"></i>Publication</th>
       </tr>
     </thead>
     <tbody>
@@ -15,6 +17,12 @@
           </td>
           <td>
             {{author}}
+          </td>
+          <td>
+            {{genre}}
+          </td>
+          <td>
+            {{publicYear}}
           </td>
         </tr>
       {{/each}}
