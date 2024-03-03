@@ -33,7 +33,8 @@
       <i class="map marker alternate icon"></i>Cork Rd, Kilbarry, Waterford
   </div>
 </div>
-<div class="ui card" style="border-style: outset;position:absolute;left:130%;bottom:1px">    
+</div>  
+<div class="ui card" style="border-style: outset;position:absolute;left:68%;bottom:28%">    
   <div class="image">
     <img src="https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/eason-big.png?v=1709442077763">
   </div>
@@ -47,5 +48,54 @@
       <i class="book icon"></i>Let's Read!
   </div>
 </div>
-  
+</div> 
+ <div class="ui five statistics">
+    
+    <div class="statistic">
+      <div class="value" style="color:white">
+        <i class="music icon"></i> 
+      </div>
+      <div class="label" style="color:white">
+        App Title: <br>
+        {{info.appTitle}}
+      </div>
+    </div>
+    
+    <div class="statistic">
+      <div class="value" style="color:white">
+        <i class="code branch icon"></i> 
+      </div>
+      <div class="label" style="color:white">
+        App Version: <br>
+        Version {{info.version}}
+      </div>
+    </div>    
+    <div class="statistic">
+      <div class="value" style="color:white">
+        <i class="map pin icon"></i> 
+      </div>
+      <div class="label" style="color:white">
+        Made in: <br>
+        {{info.location}}
+      </div>
+    </div>    
+    <div class="statistic">
+      <div class="value" style="color:white">
+        <i class="user icon"></i> 
+      </div>
+      <div class="label" style="color:white">
+        Created by: <br>
+        {{info.creators.0.name}}
+      </div>
+    </div> 
+    <div class="statistic" >
+      <div class="value" style="color:white">
+        <i class="user plus icon"></i> 
+      </div>
+      <div class="label" style="color:white">
+        With help from: <br>
+        {{info.creators.1.name}}
+      </div>
+    </div> 
+  </div> 
 </section>
