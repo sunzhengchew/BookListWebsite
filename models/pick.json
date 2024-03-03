@@ -1,12 +1,11 @@
 {
-  // An array containing information about different books
   "pickBook": [
     {
-      "id": "01",// Unique identifier for the book
-      "bookName": "Moby-Dick",// The title of the book
-      "details": [ // Details including author, genre, and publication year
+      "id": "01",
+      "bookName": "Moby-Dick",
+      "details": [ 
         {
-          "id":"04",// Unique identifier for the book details
+          "id":"04",
           "author": "Herman Melville",
           "genre": "Adventure Fiction",
           "publicYear": "1851"

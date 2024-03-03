@@ -6,7 +6,7 @@ const router = express.Router();
 import start from './controllers/start.js';
 import dashboard from './controllers/dashboard.js';
 import about from './controllers/about.js';
-import pick from './controllers/recommend.js';
+import pick from './controllers/pickboard.js';
 import booklist from './controllers/booklist.js';
 
 router.get('/', start.createView);

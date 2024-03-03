@@ -6,10 +6,10 @@ import JsonStore from './json-store.js';
 const mypick = {
 
   store: new JsonStore('./models/mycollection.json', { pickBook: [] }),
-  collection: 'pickCollection',
+  collection: 'pickBook',
   array: 'details',
 
-  getAllPickklists() {
+  getAllPicklists() {
     return this.store.findAll(this.collection);
   },
   getPicklist(id) {
