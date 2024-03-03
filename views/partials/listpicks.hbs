@@ -1,12 +1,11 @@
 {{#if singlePicklist.details}}
-
-  <div class="ui card">
+{{#each singlePicklist.details}}
+  <div class="ui card" style="margin-right: auto; margin-left: auto;">
     <div class="image">
     <img src="/images/avatar2/large/kristy.png">
     </div>
     <div class="content">
-    {{#each singlePicklist.details}}
-        <a class="header">{{bookName}}({{genre}})</a>
+        <a class="header">{{genre}}</a>
         <div class="meta">
         <span class="date">author</span>
         </div>
@@ -22,5 +21,5 @@
     <h3 class="ui message">
       Empty Booklist!
     </h3>
-
+{{/each}}
 {{/if}}
