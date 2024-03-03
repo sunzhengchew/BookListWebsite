@@ -3,13 +3,15 @@ import logger from "./utils/logger.js";
 import express from 'express';
 const router = express.Router();
 
-import start from './controllers/start.js';
-import dashboard from './controllers/dashboard.js';
-import about from './controllers/about.js';
-import pickboard from './controllers/pickboard.js';
-import booklist from './controllers/booklist.js';
-import picklist from './controllers/picklist.js';
+//get each controller from controller file
+import start from './controllers/start.js'; 
+import dashboard from './controllers/dashboard.js'; 
+import about from './controllers/about.js'; 
+import pickboard from './controllers/pickboard.js'; 
+import booklist from './controllers/booklist.js'; 
+import picklist from './controllers/picklist.js'; 
 
+//imports each controllers and call the function in them
 router.get('/', start.createView);
 router.get('/dashboard', dashboard.createView);
 router.get('/about', about.createView);
