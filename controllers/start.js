@@ -14,7 +14,9 @@ const start = {                                // Creating an object named 'star
     let calc = 0;
     let avgBook = 0;
     let maxBooks = 0;
+    let minBooks = 0;
     let maxBooklists = null;
+    let minBooklists = null;
     
     for (let item of booklists) { //for loop for amount of booklists
       numBooks += item.books.length;
@@ -43,6 +45,12 @@ const start = {                                // Creating an object named 'star
       maxBooklists = item.category;
     }
   }
+    for (let item of booklists) {
+    if (item.books.length < maxBooks) {
+      minBooks = item.books.length;
+      minBooklists = item.category;
+    }
+  }
     
     const viewData = {
       title: "Welcome to the Booklist app!",
@@ -50,7 +58,8 @@ const start = {                                // Creating an object named 'star
       displayNumBooklists: checkBooklists,
       displayNumBooks:checkBooks,
       displayAvgBooks: avgBook,
-      displayMaxBooklists: maxBooklists
+      displayMaxBooklists: maxBooklists,
+      displayMinBooklists:minBooklists
     };
     
     //logger.debug(viewData);
