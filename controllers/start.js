@@ -40,7 +40,7 @@ const start = {                                // Creating an object named 'star
     for (let item of booklists) {
     if (item.books.length > maxBooks) {
       maxBooks = item.books.length;
-      maxBooklists = item.title;
+      maxBooklists = item.category;
     }
   }
     
