@@ -11,8 +11,10 @@ const start = {                                // Creating an object named 'star
     let checkBooklists = "";
     let numBooks = 0; //amount of the books
     let checkBooks = ""; //add a zero before statistic result if amount of books less than 10
+    let calc = 0;
+    let avgBook = 0;
     
-    for (let item of booklists) {
+    for (let item of booklists) { //for loop for amount of booklists
       numBooks += item.books.length;
       if(numBooks < 10){
         checkBooks = "0" + numBooks;
@@ -22,7 +24,7 @@ const start = {                                // Creating an object named 'star
       }
     }
     
-    if(numBooklists < 10){
+    if(numBooklists < 10){ //for loop for amount of books
         checkBooklists = "0" + numBooklists;
       }
       else{
