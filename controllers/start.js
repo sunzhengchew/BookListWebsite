@@ -23,7 +23,6 @@ const start = {                                // Creating an object named 'star
         checkBooks = numBooks;
       }
     }
-    
     if(numBooklists < 10){ //for loop for amount of books
         checkBooklists = "0" + numBooklists;
       }
@@ -31,11 +30,17 @@ const start = {                                // Creating an object named 'star
         checkBooklists = numBooklists;
       }
     
+    for (let item of booklists) {
+        calc += item.books.length / booklists.length;
+        avgBook = calc.toFixed(2)
+    }
+    
     const viewData = {
       title: "Welcome to the Booklist app!",
       info: creator.getAppInfo(), // Retrieving application information using the 'getAppInfo' method from info.js
       displayNumBooklists: checkBooklists,
-      displayNumBooks:checkBooks
+      displayNumBooks:checkBooks,
+      displayAvgBooks: avgBook,
     };
     
     //logger.debug(viewData);
