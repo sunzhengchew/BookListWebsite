@@ -27,7 +27,7 @@ const booklist = {                         // Creating an object named 'booklist
       publicYear: request.body.public,
 
     };
-    booklistStore.addSong(booklistId, newBook);
+    booklistStore.addBook(booklistId, newBook);
     response.redirect('/booklist/' + booklistId);
 },
 };
