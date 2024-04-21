@@ -20,6 +20,6 @@ router.get('/error', (request, response) => response.status(404).end('Page not f
 router.get('/booklist/:id', booklist.createView);
 router.get('/picklist/:id', picklist.createView);
 router.post('/dashboard/addbooklist', dashboard.addBooklist);
-
+router.post('/booklist/:id/addBook', booklist.addBook);
 
 export default router;

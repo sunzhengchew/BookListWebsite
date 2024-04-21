@@ -2,6 +2,7 @@
 
 import logger from '../utils/logger.js';
 import booklistStore from '../models/mycollection.js';
+import { v4 as uuidv4 } from 'uuid';
 
 const booklist = {                         // Creating an object named 'booklist' which contains a method 'createView'
   createView(request, response) {         // Method to handle rendering the 'booklist' view
@@ -15,6 +16,20 @@ const booklist = {                         // Creating an object named 'booklist
 
     response.render('booklist', viewData); 
   },
+  addBook(request, response) {
+    const booklistId = request.params.id;
+    const booklist = booklistStore.getBooklist(booklistId);
+    const newBook = {
+      id: uuidv4(),
+      title: request.body.title,
+      author: request.body.author,
+      genre: request.body.genre,
+      publicYear: request.body.public,
+
+    };
+    booklistStore.addSong(booklistId, newBook);
+    response.redirect('/booklist/' + booklistId);
+},
 };
 
 export default booklist; // Exporting the 'booklist' object
