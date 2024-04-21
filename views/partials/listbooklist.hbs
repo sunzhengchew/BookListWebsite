@@ -1,0 +1,14 @@
+<section class="ui secondary inverted brown left aligned middle aligned segment">
+  
+  <h2><div class="dashtitle">Booklist Collection Dashboard</div></h2>
+
+  {{#each booklists}}
+    <section class="ui secondary inverted teal left aligned middle aligned segment" style="border-style:outset">
+      <h3 class="ui header" style="font-family:cursive">
+        {{category}}
+      </h3>     
+      <a href="/booklist/{{id}}" style="text-decoration:underline;color:white"> <i class="hand point right outline icon"></i>My Collection </a>
+    </section> 
+  {{/each}}
+  {{> addbooklist}}
+</section>
