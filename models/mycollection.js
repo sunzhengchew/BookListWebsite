@@ -15,10 +15,9 @@ const booklistStore = {
   getBooklist(id) {
     return this.store.findOneBy(this.collection, (booklist => booklist.id === id));
 },
-  addBooklist(id, books) {
-    this.store.addItem(this.collection, id, this.array, books);
+  addbooklist(booklist) {
+    this.store.addCollection(this.collection, booklist);
 },
-
 };
 
 export default booklistStore;

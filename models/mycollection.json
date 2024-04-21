@@ -1,5 +1,5 @@
 {
-  "bookListsCollection": [ 
+  "bookListsCollection": [
     {
       "id": "01",
       "category": "Classic",
@@ -10,7 +10,7 @@
           "author": "Gabriel García Márquez",
           "genre": "Magic realism",
           "publicYear": "1967",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ohs.jpg?v=1709496478827"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ohs.jpg?v=1709496478827"
         },
         {
           "id": "05",
@@ -18,7 +18,7 @@
           "author": "J.D. Salinger",
           "genre": "Bildungsroman",
           "publicYear": "1951",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/catch.png?v=1709496691971"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/catch.png?v=1709496691971"
         },
         {
           "id": "06",
@@ -26,7 +26,7 @@
           "author": " Mark Twain",
           "genre": "Fiction",
           "publicYear": "1951",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
         }
       ]
     },
@@ -40,7 +40,7 @@
           "author": "Toshikazu Kawaguchi",
           "genre": "Magical Realism",
           "publicYear": "2015",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/coffee.jpeg?v=1709497167936"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/coffee.jpeg?v=1709497167936"
         },
         {
           "id": "08",
@@ -48,7 +48,7 @@
           "author": "Harper Lee",
           "genre": "Bildungsroman",
           "publicYear": "1960",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/bird%20copy.jpg?v=1709497167581"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/bird%20copy.jpg?v=1709497167581"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "author": "Eiichiro Oda",
           "genre": "Adventure",
           "publicYear": "since 1997",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/onepice.jpeg?v=1709497171493"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/onepice.jpeg?v=1709497171493"
         },
         {
           "id": "10",
@@ -70,9 +70,10 @@
           "author": "Shō Harusono",
           "genre": "Comedy",
           "publicYear": "since 2016",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ssk.jpeg?v=1709497310931"
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ssk.jpeg?v=1709497310931"
         }
       ]
-    }
+    },
+    null
   ]
 }

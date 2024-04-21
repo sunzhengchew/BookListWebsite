@@ -22,7 +22,8 @@ const dashboard = {                          // Creating an object named 'dashbo
     const booklist = booklistStore.getBooklist(booklistId);
     const newbooklist = {
       id: uuidv4(),
-      title: request.body.title
+      title: request.body.title,
+      books:[],
     };
     booklistStore.addbooklist(booklistId, newbooklist);
     response.redirect('/booklist/' + booklistId);
