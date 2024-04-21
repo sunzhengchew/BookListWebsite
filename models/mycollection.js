@@ -15,7 +15,7 @@ const booklistStore = {
   getBooklist(id) {
     return this.store.findOneBy(this.collection, (booklist => booklist.id === id));
 },
-  addbooklist(booklist) {
+  addBooklist(booklist) {
     this.store.addCollection(this.collection, booklist);
 },
 };

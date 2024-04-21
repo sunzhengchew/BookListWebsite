@@ -17,16 +17,14 @@ const dashboard = {                          // Creating an object named 'dashbo
     
     response.render('dashboard', viewData);
   },
-  addbooklist(request, response) {
-    const booklistId = request.params.id;
-    const booklist = booklistStore.getBooklist(booklistId);
-    const newbooklist = {
+  addBooklist(request, response) {
+    const newBookList = {
       id: uuidv4(),
       title: request.body.title,
-      books:[],
+      books: [],
     };
-    booklistStore.addbooklist(booklistId, newbooklist);
-    response.redirect('/booklist/' + booklistId);
+    booklistStore.addBooklist(newBookList);
+    response.redirect('/dashboard');
 },
 };
 
