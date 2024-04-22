@@ -51,6 +51,7 @@ const booklistStore = {
     this.store.addItem(this.collection, id, this.array, book);
     response();
   },
+  
   addBooklist(booklist) {
     this.store.addCollection(this.collection, booklist);
   },
