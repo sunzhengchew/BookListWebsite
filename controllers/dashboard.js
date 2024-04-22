@@ -17,6 +17,15 @@ const dashboard = {                          // Creating an object named 'dashbo
     
     response.render('dashboard', viewData);
   },
+  addBooklist(request, response) {
+    const newPlayList = {
+      id: uuidv4(),
+      category: request.body.category,
+      books: [],
+    };
+    booklistStore.addBooklist(newBookList);
+    response.redirect('/dashboard');
+},
 };
 
 export default dashboard;                    // Exporting the 'dashboard' object for external usage
