@@ -5,6 +5,7 @@ import express from 'express';
 import routes from './routes.js'; 
 import logger from "./utils/logger.js";
 import bodyParser from "body-parser";
+import fileUpload from "express-fileupload";
 
 const app = express();
 const port = 3000;
@@ -17,6 +18,7 @@ app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs")
 
 app.use("/", routes);
+app.use(fileUpload({useTempFiles: true}));
 
 app.listen(port, () => logger.info("Your app is listening on port " + port));
 

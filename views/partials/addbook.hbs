@@ -1,9 +1,13 @@
-<form class="ui secondary teal inverted stacked segment form" action="/booklist/{{singleBooklist.id}}/addbook" method="POST">
-  <div class="four fields">
+<form class="ui secondary teal inverted stacked segment form" action="/booklist/{{singleBooklist.id}}/addbook" method="POST" enctype="multipart/form-data">
+  <div class="five fields">
     <div class="field">
       <label>Book Name</label>
       <input type="text" name="name" autofocus required title = "Please include a valid Title"
 	  placeholder="Title">
+    </div>
+    <div class="field">
+      <label>Book Cover</label>
+      <input placeholder="Image" type="file" name="image" required>
     </div>
     <div class="field">
       <label>Author</label>

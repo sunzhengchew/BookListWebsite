@@ -2,6 +2,7 @@
 
 import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
+import cloudinary from 'cloudinary';
 
 const booklistStore = {
 
