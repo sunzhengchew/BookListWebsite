@@ -21,10 +21,10 @@ const booklist = {                         // Creating an object named 'booklist
     const booklist = booklistStore.getBooklist(booklistId);
     const newBook = {
       id: uuidv4(),
-      title: request.body.title,
-      artist: request.body.author,
+      name: request.body.name,
+      author: request.body.author,
       genre: request.body.genre,
-      public: request.body.public
+      publicYear: request.body.publicYear
     };
     booklistStore.addBook(booklistId, newBook);
     response.redirect('/booklist/' + booklistId);
