@@ -28,8 +28,21 @@ const booklistStore = {
   getBooklist(id) {
     return this.store.findOneBy(this.collection, (booklist => booklist.id === id));
 },
- async addBook(id, book,response) {
-  this.store.addItem(this.collection, id, this.array, book); 
+ async addBook(id,book, response) {
+  function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(book.image.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  book.image = result.url;
+
+  this.store.addItem(this.collection, id,this.array,book);
+  response();
 },
   addBooklist(booklist) {
     this.store.addCollection(this.collection, booklist);
