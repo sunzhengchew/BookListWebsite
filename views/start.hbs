@@ -5,11 +5,11 @@
   border-radius: 8px;
   border-style:inset;
   position:relative;
-  left:27em;
-  top:30px;
-  padding:20px;
+  left:23em;
+  top:57px;
+  padding:18px;
   margin:10px;
-  width:40%;
+  width:50%;
   font-family:cursive;
   background-color:#84A9C0;
   text-shadow: 2px 2px 5px #F7A072;
@@ -19,34 +19,45 @@
   h2{
   border-radius: 8px;
   position:relative;
-  left:12em;
-  top:65px;
+  left:13.3em;
+  top:110px;
   margin:120px;
   padding:20px;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -1px 0 #F7A072, 0 1px #F7A072, 1px 0 #F7A072, 0 -1px #F7A072;
   background-color:#84A9C0;
   border-style:inset;
-  width:40%;
+  width:50%;
+  font-family:cursive;
   }
   
 </style>
 
-<section class="ui center aligned middle aligned segment">
-<div class="content"> 
+<section class="ui secondary inverted brown center aligned middle aligned segment">
     <h2>Welcome to my book collection!</h2>
     <h3>
       This app is gonna show you books I pick for collection!
     </h3>  
   <img src="https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/library.webp?v=1709346417197" class="ui rounded image"
        style="position:relative;
-              bottom:40%;
-              left:4em;"
-       width="300px" height="300px">
-  <div class="ui small inverted  statistics" style="position:relative;top:17em;left:3em">
+              bottom:15em;
+              left:3em;
+              border-style:outset;
+              border-radius: 8px;
+              border-width:6px;
+              border-color:#BFD7EA;"
+       width="350px" height="350px">
+  <h4 class="ui inverted horizontal divider header" style="position:relative;bottom:13em;">
+    <i class="small bar chart icon"></i>
+    Statistics
+  </h4>
+  <div class="ui placeholder segment" style="position:relative;bottom:13em;width=20%">
+  <div class="ui two column very relaxed grid">
+    <div class="column">
+    <div class="ui three small statistics">
     <div class="statistic">
     <div class="label" style="text-decoration-line: underline;">
-      Total Booklist
+      Booklist Amount
     </div>
     <div class="value">
       <img src="https://cdn.glitch.global/13846978-a6d2-4332-b1a9-13b6de65e9c2/book%20shelficon.webp?v=1712109008474" class="ui circular inline image"
@@ -57,7 +68,7 @@
   </div>
     <div class="statistic">
     <div class="label" style="text-decoration-line: underline;">
-      Total Book
+      Book Amount
     </div>
     <div class="value">
       <img src="https://cdn.glitch.global/13846978-a6d2-4332-b1a9-13b6de65e9c2/books.png?v=1712255050518" class="ui circular inline image"
@@ -68,7 +79,7 @@
   </div>
   <div class="statistic">
   <div class="label" style="text-decoration-line: underline;">
-      Average Book Amount
+      Each List Have
   </div>
     <div class="value">
       <img src="https://cdn.glitch.global/13846978-a6d2-4332-b1a9-13b6de65e9c2/avg.png?v=1712262766408" class="ui circular inline image"
@@ -76,9 +87,11 @@
                   top:7px;">  
       {{displayAvgBooks}}
     </div>
-  </div>  
   </div> 
-  <div class="ui tiny olive inverted  statistics" style="position:relative; top:17em; left:6em">
+    </div>
+    </div>
+    <div class="middle aligned column">
+<div class="ui small olive  statistics">
   <div class="statistic">
     <div class="label" style="text-decoration-line: underline;">
       Most of The Book are
@@ -86,7 +99,7 @@
     <div class="value">
       {{displayMaxBooklists}}
     </div>
-  </div>
+  </div> 
   <div class="statistic">
     <div class="label" style="text-decoration-line: underline;">
       Least of The Book are
@@ -96,5 +109,10 @@
     </div>
   </div>
   </div> 
+  </div> 
+    </div>
+  <div class="ui vertical divider">
+    Or
+  </div>
 </div>
 </section>
