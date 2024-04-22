@@ -18,7 +18,7 @@ const dashboard = {                          // Creating an object named 'dashbo
     response.render('dashboard', viewData);
   },
   addBooklist(request, response) {
-    const newPlayList = {
+    const newBookList = {
       id: uuidv4(),
       category: request.body.category,
       books: [],
