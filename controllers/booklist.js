@@ -27,9 +27,9 @@ const booklist = {                         // Creating an object named 'booklist
       publicYear: request.body.publicYear,
       image: request.files.image,
     };
-    booklistStore.addBook(booklistId, newBook);
+    booklistStore.addBook(booklistId, newBook,function(){
     response.redirect('/booklist/' + booklistId);
-},
-};
-
+    });
+ },
+}
 export default booklist; // Exporting the 'booklist' object
