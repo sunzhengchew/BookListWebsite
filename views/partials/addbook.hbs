@@ -1,4 +1,4 @@
-<form class="ui secondary teal inverted stacked segment form" action="/booklist/{{singleBooklist.category}}/addbook" method="POST">
+<form class="ui secondary teal inverted stacked segment form" action="/booklist/{{singleBooklist.id}}/addbook" method="POST">
   <div class="four fields">
     <div class="field">
       <label>Book Name</label>
@@ -16,7 +16,7 @@
 	  placeholder="Genre"  >
     </div>
     <div class="field">
-      <label>Publication</label>
+      <label>Publication Year</label>
       <input type="text" name="publicYear" required title = "Please include a valid Author"
 	  placeholder="Public"  >
     </div>
