@@ -2,7 +2,6 @@
 
 import logger from "../utils/logger.js";
 import booklistStore from "../models/mycollection.js";
-import { v4 as uuidv4 } from 'uuid';
 
 const dashboard = {                          // Creating an object named 'dashboard' which contains a method 'createView'
   createView(request, response) {
@@ -17,15 +16,6 @@ const dashboard = {                          // Creating an object named 'dashbo
     
     response.render('dashboard', viewData);
   },
-  addBooklist(request, response) {
-    const newBookList = {
-      id: uuidv4(),
-      title: request.body.title,
-      books: [],
-    };
-    booklistStore.addBooklist(newBookList);
-    response.redirect('/dashboard');
-},
 };
 
 export default dashboard;                    // Exporting the 'dashboard' object for external usage
