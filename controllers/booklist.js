@@ -22,14 +22,14 @@ const booklist = {                         // Creating an object named 'booklist
     const newBook = {
       id: uuidv4(),
       name: request.body.name,
+      image: request.files.image,
       author: request.body.author,
       genre: request.body.genre,
-      publicYear: request.body.publicYear,
-      image: request.files.image,
+      publicYear: request.body.publicYear
     };
-    booklistStore.addBook(booklistId, newBook);
-    response.redirect('/booklist/' + booklistId);
-},
-};
-
+    booklistStore.addBook(booklistId, newBook,function(){
+     response.redirect('/booklist/' + booklistId);
+    });
+  } 
+}
 export default booklist; // Exporting the 'booklist' object
