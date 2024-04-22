@@ -1,0 +1,25 @@
+<form class="ui stacked segment form" action="/booklist/{{singleBooklist.category}}/addbook" method="POST">
+  <div class="four fields">
+    <div class="field">
+      <label>Book Name</label>
+      <input type="text" name="title" autofocus required title = "Please include a valid Title"
+	  placeholder="Title">
+    </div>
+    <div class="field">
+      <label>Author</label>
+      <input type="text" name="author" required title = "Please include a valid Author"
+	  placeholder="Author"  >
+    </div>
+    <div class="field">
+      <label>Genre</label>
+      <input type="text" name="genre" required title = "Please include a valid Author"
+	  placeholder="Genre"  >
+    </div>
+    <div class="field">
+      <label>Publication</label>
+      <input type="text" name="public" required title = "Please include a valid Author"
+	  placeholder="Public"  >
+    </div>
+  </div>
+  <button class="ui blue submit button">Add Song</button>
+</form>
