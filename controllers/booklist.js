@@ -25,7 +25,7 @@ const booklist = {                         // Creating an object named 'booklist
       author: request.body.author,
       genre: request.body.genre,
       publicYear: request.body.publicYear,
-      image: request.files.image,
+        image: request.files.image,
     };
     booklistStore.addBook(booklistId, newBook);
     response.redirect('/booklist/' + booklistId);
