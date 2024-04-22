@@ -2,6 +2,7 @@
 
 import logger from "../utils/logger.js";
 import booklistStore from "../models/mycollection.js";
+import { v4 as uuidv4 } from 'uuid';
 
 const dashboard = {                          // Creating an object named 'dashboard' which contains a method 'createView'
   createView(request, response) {
