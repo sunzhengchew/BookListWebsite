@@ -29,7 +29,7 @@ const dashboard = {                          // Creating an object named 'dashbo
   deleteBooklist(request, response) {
     const booklistId = request.params.id;
     logger.debug(`Deleting Booklist ${booklistId}`);
-    playlistStore.removePlaylist(playlistId);
+    booklistStore.removeBooklist(booklistId);
     response.redirect("/dashboard");
 },
 };
