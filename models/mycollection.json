@@ -10,19 +10,7 @@
           "author": "Gabriel García Márquez",
           "genre": "Magic realism test",
           "publicYear": "1967",
-          "image": {
-            "name": "132faafeea0ef322b766f716c6f2cceaa0801289.png@162.webp",
-            "data": {
-              "type": "Buffer",
-              "data": []
-            },
-            "size": 7444,
-            "encoding": "7bit",
-            "tempFilePath": "/app/tmp/tmp-4-1713882748016",
-            "truncated": false,
-            "mimetype": "image/webp",
-            "md5": "a21fe1c4eae517f2d949f971a40b1c7a"
-          }
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1713883145/vfifkdblkfo0oc8jkgil.jpg"
         },
         {
           "id": "05",
