@@ -30,12 +30,12 @@ const handlebars = create({
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
+app.use(fileUpload({useTempFiles: true}));
 
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs")
 
 app.use("/", routes);
-app.use(fileUpload({useTempFiles: true}));
 
 app.listen(port, () => logger.info("Your app is listening on port " + port));
 
