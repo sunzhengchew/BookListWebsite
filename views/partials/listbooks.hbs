@@ -1,6 +1,5 @@
 {{#if books}}
-
-  <table class="ui selectable celled inverted teal table">
+<table class="ui selectable celled inverted teal table">
     <thead>
       <tr>
         <th class="three wide"><i class="book icon"></i>Book Name</th>
@@ -13,64 +12,17 @@
       </tr>
     </thead>
     <tbody>
-      {{#each books}}
-      <form 
-          class = "ui stacked segment form" 
-          action="/booklist/{{../id}}/updatebook/{{id}}" 
-          method="POST"
-        >
-        <tr class="fields">
-          <td class="three wide field">
-            <span class="ui input">
-               <input type="text" name="name" autofocus required 
-                      title = "Please include a valid Title" placeholder="Title" 
-					  value = "{{name}}">
-              </span>
-          </td>
-          <td class="two wide field">
-            <img src="{{image}}">
-          </td>
-          <td class="four wide field">
-            <span class="ui input">
-               <input type="text" name="author" autofocus required 
-                      title = "Please include a valid Title" placeholder="Author" 
-					  value = "{{author}}">
-              </span>
-          </td>
-          <td class="two wide field">
-            <span class="ui input">
-               <input type="text" name="genre" autofocus required 
-                      title = "Please include a valid Title" placeholder="Genre" 
-					  value = "{{genre}}">
-              </span>
-          </td>
-          <td class="two wide field">
-           <span class="ui input">
-               <input type="text" name="publicYear" autofocus required 
-                      title = "Please include a valid Title" placeholder="PublicYear" 
-					  value = "{{publicYear}}">
-              </span>
-          </td>
-          <td class="one wide center aligned">
-              <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-            </td>
-          <td class="one wide center aligned">
-          <a href="/booklist/{{../id}}/deletebook/{{id}}" 
-	         class="ui icon button" title="Delete Book">
-          <i class="ui trash icon"></i>
-          </a>
-          </td>
-        </tr>
-      </form>
-      {{/each}}
-    </tbody>
+{{#each books}}
+      
+  {{> listOneBook booklistId=../id}}
+  {{> editbook booklistId=../id}}
+      
+{{/each}}
+</tbody>
   </table>
 
   {{else}}
     <h3 class="ui message">
       Empty Booklist!
     </h3>
-
 {{/if}}
