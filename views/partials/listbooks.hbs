@@ -3,11 +3,13 @@
   <table class="ui selectable celled inverted teal table">
     <thead>
       <tr>
-        <th><i class="book icon"></i>Book Name</th>
-        <th><i class="image outline icon"></i>Book Cover</th>
-        <th><i class="pencil alternate icon"></i>Author</th>
-        <th><i class="tag icon"></i>Genre</th>
-        <th><i class="calendar times outline icon"></i>Publication</th>
+        <th class="four wide"><i class="book icon"></i>Book Name</th>
+        <th class="four wide"><i class="image outline icon"></i>Book Cover</th>
+        <th class="four wide"><i class="pencil alternate icon"></i>Author</th>
+        <th class="three wide"><i class="tag icon"></i>Genre</th>
+        <th class="three wide"><i class="calendar times outline icon"></i>Publication</th>
+        <th class="one wide"></th>
+        <th class="one wide"></th>
       </tr>
     </thead>
     <tbody>
@@ -18,31 +20,31 @@
           method="POST"
         >
         <tr class="fields">
-          <td class="fields">
+          <td class="field">
             <span class="ui input">
                <input type="text" name="name" autofocus required 
                       title = "Please include a valid Title" placeholder="Title" 
 					  value = "{{name}}">
               </span>
           </td>
-          <td class="fields">
+          <td class="field">
             <img src="{{image}}">
           </td>
-          <td class="fields">
+          <td class="field">
             <span class="ui input">
                <input type="text" name="author" autofocus required 
                       title = "Please include a valid Title" placeholder="Author" 
 					  value = "{{author}}">
               </span>
           </td>
-          <td class="fields">
+          <td class="field">
             <span class="ui input">
                <input type="text" name="genre" autofocus required 
                       title = "Please include a valid Title" placeholder="Genre" 
 					  value = "{{genre}}">
               </span>
           </td>
-          <td class="fields">
+          <td class="field">
            <span class="ui input">
                <input type="text" name="publicYear" autofocus required 
                       title = "Please include a valid Title" placeholder="PublicYear" 

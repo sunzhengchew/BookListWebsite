@@ -41,7 +41,7 @@ const booklist = {                         // Creating an object named 'booklist
   updateBook(request, response) {
     const booklistId = request.params.id;
     const bookId = request.params.bookid;
-    logger.debug("updating song " + bookId);
+    logger.debug("updating book " + bookId);
     const updatedBook = {
       id: bookId,
       name: request.body.name,
