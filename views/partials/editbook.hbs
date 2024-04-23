@@ -1,9 +1,9 @@
 <form 
           class = "ui stacked segment form" 
           action="/booklist/{{../id}}/updatebook/{{id}}" 
-          method="POST"
+          method="POST"  enctype="multipart/form-data"
         >
-        <tr class="hides" id="edit">
+        <tr class="hides" id="edit{{@index}}">
           <td class="three wide field">
             <span class="ui fluid input">
                <input type="text" name="name" autofocus required 
@@ -39,7 +39,7 @@
               </span>
           </td>
           <td>
-      <button type = "reset" class="ui icon button"  id="hideEdit" 
+      <button type = "reset" class="ui icon button"  id="hideEdit{{@index}}" 
 	          title="Exit without saving">
         <i class="ui undo icon"></i>
       </button>
