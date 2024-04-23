@@ -1,42 +1,21 @@
-<form 
-          class = "ui stacked segment form" 
-          action="/booklist/{{../id}}/updatebook/{{id}}" 
-          method="POST"
-        >
-        <tr class="fields">
+        <tr class="fields" id="song">
           <td class="three wide field">
-            <span class="ui input">
-               <input type="text" name="name" autofocus required 
-                      title = "Please include a valid Title" placeholder="Title" 
-					  value = "{{name}}">
-              </span>
+               {{capitalise name}}
           </td>
           <td class="two wide field">
             <img src="{{image}}">
           </td>
           <td class="four wide field">
-            <span class="ui input">
-               <input type="text" name="author" autofocus required 
-                      title = "Please include a valid Title" placeholder="Author" 
-					  value = "{{author}}">
-              </span>
+            {{capitalise author}}
           </td>
           <td class="two wide field">
-            <span class="ui input">
-               <input type="text" name="genre" autofocus required 
-                      title = "Please include a valid Title" placeholder="Genre" 
-					  value = "{{genre}}">
-              </span>
+            {{capitalise genre}}
           </td>
           <td class="two wide field">
-           <span class="ui input">
-               <input type="text" name="publicYear" autofocus required 
-                      title = "Please include a valid Title" placeholder="PublicYear" 
-					  value = "{{publicYear}}">
-              </span>
+               {{publicYear}}
           </td>
           <td class="one wide center aligned">
-              <button type = "submit" class="ui icon button">
+              <button class="ui icon button" title="Edit Book" id="showEdit">
                 <i class="ui pencil icon"></i>
               </button>
             </td>
@@ -47,4 +26,3 @@
           </a>
           </td>
         </tr>
-      </form>

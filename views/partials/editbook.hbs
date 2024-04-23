@@ -3,48 +3,53 @@
           action="/booklist/{{../id}}/updatebook/{{id}}" 
           method="POST"
         >
-        <tr class="fields">
+        <tr class="hides" id="edit">
           <td class="three wide field">
-            <span class="ui input">
+            <span class="ui fluid input">
                <input type="text" name="name" autofocus required 
                       title = "Please include a valid Title" placeholder="Title" 
 					  value = "{{name}}">
               </span>
           </td>
           <td class="two wide field">
-            <img src="{{image}}">
+            <span class="ui fluid input">
+            <input type="file" name="image" autofocus required title = "Please include a valid image file"
+	  placeholder="Image">
+            </span>
           </td>
           <td class="four wide field">
-            <span class="ui input">
+            <span class="ui fluid input">
                <input type="text" name="author" autofocus required 
                       title = "Please include a valid Title" placeholder="Author" 
 					  value = "{{author}}">
               </span>
           </td>
           <td class="two wide field">
-            <span class="ui input">
+            <span class="ui fluid input">
                <input type="text" name="genre" autofocus required 
                       title = "Please include a valid Title" placeholder="Genre" 
 					  value = "{{genre}}">
               </span>
           </td>
           <td class="two wide field">
-           <span class="ui input">
+           <span class="ui fluid input">
                <input type="text" name="publicYear" autofocus required 
                       title = "Please include a valid Title" placeholder="PublicYear" 
 					  value = "{{publicYear}}">
               </span>
           </td>
-          <td class="one wide center aligned">
-              <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-            </td>
-          <td class="one wide center aligned">
-          <a href="/booklist/{{../id}}/deletebook/{{id}}" 
-	         class="ui icon button" title="Delete Book">
-          <i class="ui trash icon"></i>
-          </a>
-          </td>
+          <td>
+      <button type = "reset" class="ui icon button"  id="hideEdit" 
+	          title="Exit without saving">
+        <i class="ui undo icon"></i>
+      </button>
+    </td>
+    <td>
+      <button type = "submit"  class="ui icon button" 
+	          title="Save changes">
+        <i class="ui save icon"></i>
+      </button>
+    </td>
+  </tr>
         </tr>
       </form>
