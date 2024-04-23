@@ -1,11 +1,14 @@
 {{> menu}}
 <section class="ui secondary inverted brown left aligned middle aligned segment">
+{{#with singleBooklist}}
   <h2 class="ui hei ader">
     <a href="/dashboard" style="color:white"><i class="undo icon"></i></a>
     <div class = "title">
-    {{singleBooklist.category}}
+    {{category}}
     </div>
   </h2>
   {{> listbooks}}
   {{> addbook}}
+  
+{{/with}}
 </section>
