@@ -12,28 +12,54 @@
     </thead>
     <tbody>
       {{#each books}}
-        <tr>
-          <td>
-            {{capitalise name}}
+      <form 
+          class = "ui stacked segment form" 
+          action="/booklist/{{../id}}/updatebook/{{id}}" 
+          method="POST"
+        >
+        <tr class="fields">
+          <td class="fields">
+            <span class="ui input">
+               <input type="text" name="name" autofocus required 
+                      title = "Please include a valid Title" placeholder="Title" 
+					  value = "{{capitalize title}}">
+              </span>
           </td>
-          <td>
+          <td class="fields">
             <img src="{{image}}">
           </td>
-          <td>
-            {{capitalise author}}
+          <td class="fields">
+            <span class="ui input">
+               <input type="text" name="author" autofocus required 
+                      title = "Please include a valid Title" placeholder="Author" 
+					  value = "{{capitalize author}}">
+              </span>
           </td>
-          <td>
-            {{capitalise genre}}
+          <td class="fields">
+            <span class="ui input">
+               <input type="text" name="genre" autofocus required 
+                      title = "Please include a valid Title" placeholder="Genre" 
+					  value = "{{capitalize genre}}">
+              </span>
           </td>
-          <td>
-            {{publicYear}}
+          <td class="fields">
+           <span class="ui input">
+               <input type="text" name="publicYear" autofocus required 
+                      title = "Please include a valid Title" placeholder="PublicYear" 
+					  value = "{{capitalize publicYear}}">
+              </span>
           </td>
+          <td class="center aligned">
+              <button type = "submit" class="ui icon button">
+                <i class="ui pencil icon"></i>
+              </button>
+            </td>
           <td class="center aligned">
           <a href="/booklist/{{../id}}/deletebook/{{id}}" 
 	         class="ui icon button" title="Delete Book">
           <i class="ui trash icon"></i>
           </a>
-</td>
+          </td>
         </tr>
       {{/each}}
     </tbody>

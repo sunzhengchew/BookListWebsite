@@ -23,5 +23,6 @@ router.get('/booklist/:id/deletebook/:bookid', booklist.deleteBook);
 router.get('/dashboard/deletebooklist/:id', dashboard.deleteBooklist);
 router.post('/booklist/:id/addbook', booklist.addBook);
 router.post('/dashboard/addbooklist', dashboard.addBooklist);
+router.post('/booklist/:id/updatebook/:bookid', booklist.updateBook);
 
 export default router;

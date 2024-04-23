@@ -38,5 +38,18 @@ const booklist = {                         // Creating an object named 'booklist
     booklistStore.removeBook(booklistId, bookId);
     response.redirect('/booklist/' + booklistId);
 },
+  updateBook(request, response) {
+    const booklistId = request.params.id;
+    const bookId = request.params.bookid;
+    logger.debug("updating song " + bookId);
+    const updatedBook = {
+      id: bookId,
+      author: request.body.author,
+      genre: request.body.genre,
+      publicYear: request.body.publicYear
+    };
+    playlistStore.editSong(playlistId, songId, updatedSong);
+    response.redirect('/playlist/' + playlistId);
+}
 }
 export default booklist; // Exporting the 'booklist' object
