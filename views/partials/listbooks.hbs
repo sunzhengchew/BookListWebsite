@@ -14,20 +14,26 @@
       {{#each singleBooklist.books}}
         <tr>
           <td>
-            {{name}}
+            {{capitalise name}}
           </td>
           <td>
             <img src="{{image}}">
           </td>
           <td>
-            {{author}}
+            {{capitalise author}}
           </td>
           <td>
-            {{genre}}
+            {{capitalise genre}}
           </td>
           <td>
             {{publicYear}}
           </td>
+          <td class="center aligned">
+          <a href="/booklist/{{../singleBooklist.id}}/deletebook/{{id}}" 
+	         class="ui icon button" title="Delete Book">
+          <i class="ui trash icon"></i>
+          </a>
+</td>
         </tr>
       {{/each}}
     </tbody>

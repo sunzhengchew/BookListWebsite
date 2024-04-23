@@ -31,5 +31,12 @@ const booklist = {                         // Creating an object named 'booklist
     response.redirect('/booklist/' + booklistId);
     });
  },
+  deleteBook(request, response) {
+    const booklistId = request.params.id;
+    const songId = request.params.bookid;
+    logger.debug(`Deleting Book  $(bookId} from Booklist ${booklistId}`);
+    booklistStore.removeBook(booklistId, songId);
+    response.redirect('/booklist/' + booklistId);
+},
 }
 export default booklist; // Exporting the 'booklist' object

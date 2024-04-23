@@ -31,7 +31,6 @@ const handlebars = create({
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
 
-const handlebars = create({extname: '.hbs'});
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs")
 

@@ -56,6 +56,9 @@ const booklistStore = {
   addBooklist(booklist) {
     this.store.addCollection(this.collection, booklist);
   },
+  removeBook(id, bookId) {
+    this.store.removeItem(this.collection, id, this.array, bookId);
+},
 };
 
 export default booklistStore;
