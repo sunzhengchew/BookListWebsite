@@ -44,12 +44,13 @@ const booklist = {                         // Creating an object named 'booklist
     logger.debug("updating song " + bookId);
     const updatedBook = {
       id: bookId,
+      name: request.body.name,
       author: request.body.author,
       genre: request.body.genre,
       publicYear: request.body.publicYear
     };
-    playlistStore.editSong(playlistId, songId, updatedSong);
-    response.redirect('/playlist/' + playlistId);
+    booklistStore.editBook(booklistId,bookId, updatedBook);
+    response.redirect('/booklist/' + booklistId);
 }
 }
 export default booklist; // Exporting the 'booklist' object
