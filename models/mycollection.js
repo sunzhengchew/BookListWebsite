@@ -63,8 +63,25 @@ const booklistStore = {
     const booklist = this.getBooklist(id);
     this.store.removeCollection(this.collection, booklist);
 },
-  editBook(id, bookId, updatedBook) {
+  async editBook(id, bookId, updatedBook,response) {
+    function uploader() {
+      return new Promise(function (resolve, reject) {
+        cloudinary.uploader.upload(
+          book.image.tempFilePath,
+          function (result, err) {
+            if (err) {
+              console.log(err);
+            }
+            resolve(result);
+          }
+        );
+      });
+    }
+    let result = await uploader();
+    logger.info("cloudinary result", result);
+    book.image = result.url;
     this.store.editItem(this.collection, id, bookId, this.array, updatedBook);
+    response();
 },
 };
 

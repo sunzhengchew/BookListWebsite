@@ -47,10 +47,12 @@ const booklist = {                         // Creating an object named 'booklist
       name: request.body.name,
       author: request.body.author,
       genre: request.body.genre,
-      publicYear: request.body.publicYear
+      publicYear: request.body.publicYear,
+      image: request.files.image
     };
-    booklistStore.editBook(booklistId,bookId, updatedBook);
+    booklistStore.editBook(booklistId,bookId, updatedBook,function(){
     response.redirect('/booklist/' + booklistId);
-}
+ });
+},
 }
 export default booklist; // Exporting the 'booklist' object

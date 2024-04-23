@@ -1,9 +1,9 @@
 <form 
           class = "ui stacked segment form" 
-          action="/booklist/{{../id}}/updatebook/{{id}}" 
+          action="/booklist/{{booklistId}}/updatebook/{{id}}" 
           method="POST"  enctype="multipart/form-data"
         >
-        <tr class="hides" id="edit{{@index}}">
+        <tr class="hide" id="edit{{@index}}">
           <td class="three wide field">
             <span class="ui fluid input">
                <input type="text" name="name" autofocus required 
