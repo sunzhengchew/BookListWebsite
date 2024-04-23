@@ -33,9 +33,9 @@ const booklist = {                         // Creating an object named 'booklist
  },
   deleteBook(request, response) {
     const booklistId = request.params.id;
-    const songId = request.params.bookid;
+    const bookId = request.params.bookid;
     logger.debug(`Deleting Book  $(bookId} from Booklist ${booklistId}`);
-    booklistStore.removeBook(booklistId, songId);
+    booklistStore.removeBook(booklistId, bookId);
     response.redirect('/booklist/' + booklistId);
 },
 }

@@ -27,13 +27,6 @@
           "genre": "Fiction",
           "publicYear": "1951",
           "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
-        },
-        {
-          "id": "699f0437-0c9b-4ebd-b3db-dd023603d2f0",
-          "name": "test",
-          "author": "test",
-          "genre": "test",
-          "publicYear": "11"
         }
       ]
     },

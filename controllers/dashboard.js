@@ -26,6 +26,12 @@ const dashboard = {                          // Creating an object named 'dashbo
     booklistStore.addBooklist(newBookList);
     response.redirect('/dashboard');
 },
+  deleteBooklist(request, response) {
+    const booklistId = request.params.id;
+    logger.debug(`Deleting Booklist ${booklistId}`);
+    playlistStore.removePlaylist(playlistId);
+    response.redirect("/dashboard");
+},
 };
 
 export default dashboard;                    // Exporting the 'dashboard' object for external usage
