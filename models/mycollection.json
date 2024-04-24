@@ -84,6 +84,14 @@
           "author": "hi",
           "genre": "hi",
           "publicYear": "1"
+        },
+        {
+          "id": "7cefb9e2-a3ce-47a4-ae96-1214ab4f7901",
+          "name": "g",
+          "author": "g",
+          "genre": "g",
+          "publicYear": "3",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714000650/f2momybzjm1a1ky6ede3.webp"
         }
       ]
     }
