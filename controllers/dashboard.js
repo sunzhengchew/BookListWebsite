@@ -32,19 +32,6 @@ const dashboard = {                          // Creating an object named 'dashbo
     booklistStore.removeBooklist(booklistId);
     response.redirect("/dashboard");
 },
-  updateBooklist(request, response) {
-    const booklistId = request.params.id;
-    logger.debug("updating booklist " + booklistId);
-    const updatedBooklist = {
-      id: booklistId,
-      category: request.body.category,
-      artist: request.body.artist,
-      genre: request.body.genre,
-      duration: request.body.duration
-    };
-    booklistStore.editBooklist(booklistId, updatedBooklist);
-    response.redirect('/dashboard/');
-}
 };
 
 export default dashboard;                    // Exporting the 'dashboard' object for external usage
