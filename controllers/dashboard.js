@@ -39,7 +39,7 @@ const dashboard = {                          // Creating an object named 'dashbo
       id: booklistId,
       category: request.body.category
     };
-    booklistStore.editBooklist(booklistId,updatedBooklist);
+    booklistStore.editBooklist(updatedBooklist);
     response.redirect('/dashboard/');
 },
 };
