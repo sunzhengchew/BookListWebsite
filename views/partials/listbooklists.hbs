@@ -5,19 +5,7 @@
   <h2><div class="dashtitle">Booklist Collection Dashboard</div></h2>
 
   {{#each booklists}}
-    <section
-      class="ui secondary inverted teal left aligned middle aligned segment"
-      style="border-style:outset"
-    >
-      <h3 class="ui header" style="font-family:cursive">
-        {{uppercase category}}
-      </h3>
-      <a href="/booklist/{{id}}" class="ui icon button">
-        <i class="open folder icon"></i>
-      </a>
-      <a href="/dashboard/deletebooklist/{{id}}" class="ui icon button">
-        <i class="trash icon"></i>
-      </a>
-    </section>
+    {{> listonebooklist booklistId=../id}}
+    {{> editbooklist booklistId=../id}}
   {{/each}}
 </section>
