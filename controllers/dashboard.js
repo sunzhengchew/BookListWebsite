@@ -39,9 +39,9 @@ const dashboard = {                          // Creating an object named 'dashbo
       id: booklistId,
       category: request.body.category
     };
-    booklistStore.editBooklist(booklistId, updatedSong);
-    response.redirect('/playlist/' + playlistId);
-}
+    booklistStore.editBooklist(updatedBooklist);
+    response.redirect('/dashboard/');
+},
 };
 
 export default dashboard;                    // Exporting the 'dashboard' object for external usage
