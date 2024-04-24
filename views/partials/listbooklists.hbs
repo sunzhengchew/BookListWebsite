@@ -8,4 +8,15 @@
     {{> listonebooklist booklistId=../id}}
     {{> editbooklist booklistId=../id}}
   {{/each}}
+<script>
+      document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
+            document.querySelector("#booklist{{@index}}").style.display = "none";
+            document.querySelector("#edit{{@index}}").style.display = "table-row";
+       })
+      document.querySelector("#hideEdit{{@index}}").addEventListener ('click', () => {
+            document.querySelector("#song{{@index}}").style.display = "table-row";
+            document.querySelector("#edit{{@index}}").style.display = "none";
+       })
+</script>
+
 </section>
