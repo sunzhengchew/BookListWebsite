@@ -2,32 +2,11 @@
   "bookListsCollection": [
     {
       "id": "01",
-      "category": "Classic",
-      "books": [
-        {
-          "id": "04",
-          "name": "One Hundred Years of Solitude",
-          "author": "Gabriel García Márquez",
-          "genre": "Magic realism test",
-          "publicYear": "1967",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1713883145/vfifkdblkfo0oc8jkgil.jpg"
-        },
-        {
-          "id": "05",
-          "name": "The Catcher in the Rye",
-          "author": "J.D. Salinger",
-          "genre": "Bildungsroman",
-          "publicYear": "1951",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/catch.png?v=1709496691971"
-        },
-        {
-          "id": "06",
-          "name": "Adventures of Huckleberry Finn",
-          "author": " Mark Twain",
-          "genre": "Fiction",
-          "publicYear": "1951",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
-        }
+      "category": [
+        "Classic,Novel,Manga,pls",
+        "Novel",
+        "Manga",
+        "pls"
       ]
     },
     {
