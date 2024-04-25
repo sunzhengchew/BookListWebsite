@@ -14,23 +14,8 @@
       class="ui secondary inverted teal left aligned middle aligned segment"
       style="border-style:outset"
     >
-      <h3 class="ui header" style="font-family:cursive">
-        <span class="ui input">
-               <input type="text" name="category" autofocus required 
-                      title = "Please include a valid Category"
-                      placeholder="Category" 
-					  value = "{{category}}">
-              </span>
-      </h3>
-      <a href="/booklist/{{id}}" class="ui icon button">
-        <i class="open folder icon"></i>
-      </a>
-      <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-      <a href="/dashboard/deletebooklist/{{id}}" class="ui icon button">
-        <i class="trash icon"></i>
-      </a>
+        {{> listonebooklist booklistId=../id}}
+        {{> editbooklist playlistId=../id}}
     </section>
   </form> 
   {{/each}}

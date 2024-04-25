@@ -35,10 +35,13 @@ const dashboard = {                          // Creating an object named 'dashbo
 },
   updateBooklist(request, response) {
     const booklistId = request.params.id;
+    const booklist = booklistStore.getBooklist(booklistId);
+
     logger.debug("updating song " + booklistId);
     const updatedBooklist = {
       id: booklistId,
-      category: request.body.category
+      category: request.body.category,
+      books:booklist.books
     };
     booklistStore.editBooklist(booklistId,updatedBooklist);
     response.redirect('/dashboard/');
