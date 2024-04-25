@@ -80,8 +80,8 @@ const booklistStore = {
     this.store.editItem(this.collection, id, bookId, this.array, updatedBook);
     response();
 },
-  editBooklist(id,updatebooklist) {
-    this.store.editCollection(this.collection,id, updatebooklist);
+  editBooklist(updatebooklist) {
+    this.store.editItem(this.collection, updatebooklist);
 },
 };
 
