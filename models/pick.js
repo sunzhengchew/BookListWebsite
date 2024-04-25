@@ -15,7 +15,10 @@ const mypick = {
   getPicklist(id) {
     return this.store.findOneBy(this.collection, (picklist => picklist.id === id));
 },
-
+  removePicklist(id) {
+    const picklist = this.getPicklist(id);
+    this.store.removeCollection(this.collection, picklist);
+},
 };
 
 export default mypick;

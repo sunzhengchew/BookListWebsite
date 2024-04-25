@@ -16,6 +16,12 @@ const pickboard = {                        // Creating an object named 'pickboar
     
     response.render('pickboard', viewData);
   },
+  deletePicklist(request, response) {
+    const picklistId = request.params.id;
+    logger.debug(`Deleting Playlist ${picklistId}`);
+    mypick.removePicklist(picklistId);
+    response.redirect("/pickboard");
+},
 };
 
 export default pickboard;                  // Exporting the 'pickboard' object for external usage

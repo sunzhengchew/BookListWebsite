@@ -12,7 +12,12 @@
       <h3 class="ui header" style="font-family:cursive">
         {{bookName}}
       </h3>     
-      <a href="/picklist/{{id}}" style="text-decoration:underline;color:white"> <i class="hand point right outline icon"></i>My Collection </a>
+     <a href="/picklist/{{id}}" class="ui icon button">
+    <i class="open folder icon"></i>
+</a>
+<a href="/pickboard/deletepicklist/{{id}}" class="ui icon button"> 
+    <i class="trash icon"></i>
+</a>
     </section>
   {{/each}}
 

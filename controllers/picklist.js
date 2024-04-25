@@ -15,6 +15,7 @@ const picklist = {                                    // Creating an object name
 
     response.render('picklist', viewData);  // Rendering the 'picklist' view with the specified data
   },
+  
 };
 
 export default picklist; // Exporting the 'picklist' object 
