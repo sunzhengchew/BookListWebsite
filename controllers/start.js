@@ -17,8 +17,8 @@ const start = {                                // Creating an object named 'star
     let minBooks = 0;
     let maxBooklists = null;
     let minBooklists = null;
-    
-    for (let item of booklists) { //for loop for amount of booklists
+    if(booklists.length > 0){
+      for (let item of booklists) { //for loop for amount of booklists
       numBooks += item.books.length;
       if(numBooks < 10){
         checkBooks = "0" + numBooks;
@@ -51,6 +51,8 @@ const start = {                                // Creating an object named 'star
       minBooklists = item.category;
     }
   }
+    
+    }
     
     const viewData = {
       title: "Welcome to the Booklist app!",
