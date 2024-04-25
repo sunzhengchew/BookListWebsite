@@ -19,6 +19,9 @@ const mypick = {
     const picklist = this.getPicklist(id);
     this.store.removeCollection(this.collection, picklist);
 },
+  editPicklist(id,updatepicklist) {
+    this.store.editCollection(this.collection, id,updatepicklist);
+},
 };
 
 export default mypick;

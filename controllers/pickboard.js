@@ -22,6 +22,19 @@ const pickboard = {                        // Creating an object named 'pickboar
     mypick.removePicklist(picklistId);
     response.redirect("/pickboard");
 },
+  updatePicklist(request, response) {
+    const picklistId = request.params.id;
+    const picklist = mypick.getPicklist(picklistId);
+
+    logger.debug("updating song " + picklistId);
+    const updatedPicklist = {
+      id: picklistId,
+      bookName: request.body.bookName,
+      details:mypick.details
+    };
+    mypick.editBooklist(booklistId,updatedBooklist);
+    response.redirect('/dashboard/');
+},
 };
 
 export default pickboard;                  // Exporting the 'pickboard' object for external usage
