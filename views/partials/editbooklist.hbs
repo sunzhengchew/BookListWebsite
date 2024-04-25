@@ -3,6 +3,7 @@
           action="/dashboard/updatebooklist/{{id}}" 
           method="POST"
         >
+  <div class="hide" id="edit">
     <section
       class="ui secondary inverted teal left aligned middle aligned segment"
       style="border-style:outset"
@@ -18,7 +19,7 @@
       <a href="/booklist/{{id}}" class="ui icon button">
         <i class="open folder icon"></i>
       </a>
-      <button type = "reset" class="ui icon button" 
+      <button type = "reset" class="ui icon button" id="hideEdit" 
 	          title="Exit without saving">
         <i class="ui undo icon"></i>
       </button>
@@ -27,4 +28,5 @@
         <i class="ui save icon"></i>
       </button>
     </section>
+  </div>
   </form>
