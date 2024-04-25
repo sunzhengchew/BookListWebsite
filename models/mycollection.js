@@ -83,6 +83,9 @@ const booklistStore = {
   editBooklist(id,updatebooklist) {
     this.store.editCollection(this.collection, id,updatebooklist);
 },
+  getUserBooklists(userid) {
+  return this.store.findBy(this.collection, (booklist => booklist.userid === userid));
+},
 };
 
 export default booklistStore;

@@ -6,6 +6,7 @@ import routes from './routes.js';
 import logger from "./utils/logger.js";
 import bodyParser from "body-parser";
 import fileUpload from "express-fileupload";
+import cookieParser from "cookie-parser";
 
 const app = express();
 const port = 3000;
@@ -31,6 +32,7 @@ const handlebars = create({
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
 app.use(fileUpload({useTempFiles: true}));
+app.use(cookieParser());
 
 app.engine(".hbs", handlebars.engine);
 app.set("view engine", ".hbs")
