@@ -38,8 +38,8 @@ const dashboard = {                          // Creating an object named 'dashbo
     const updatedCategory = request.body.category;
     const booklist = booklistStore.getBooklist(booklistId);
     const updatedBooklist = {
-        ...booklist,
-        category: updatedCategory
+        category: updatedCategory,
+        books:[],
     };
     booklistStore.editBooklist(booklistId, updatedBooklist);
     response.redirect('/dashboard/');
