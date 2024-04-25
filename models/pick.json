@@ -1,33 +1,17 @@
 {
-  "pickBookCollection": [ 
+  "pickBookCollection": [
     {
       "id": "01",
       "bookName": "Moby-Dick",
-      "details": [ 
+      "details": [
         {
-          "id":"04",
+          "id": "04",
           "author": "Herman Melville",
           "genre": "Adventure Fiction",
           "publicYear": "1851",
-          "descript":"A timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature.",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/moby.jpg?v=1709491808149",
-          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/whaleback.jpg?v=1709493532620"
-
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "bookName": "A Song of Ice and Fire",
-      "details": [
-        {
-          "id":"05",
-          "author": "George R. R. Martin",
-          "genre": "High Fantasy",
-          "publicYear": "1991",
-          "descript":"A sprawling high fantasy series renowned for its complex characters, intricate political plots, and moral ambiguity, leaving an enduring impact on the fantasy genre.",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/song.jpg?v=1709491994923",
-          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/songback.jpg?v=1709494164255"
+          "descript": "A timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature.",
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/moby.jpg?v=1709491808149",
+          "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/whaleback.jpg?v=1709493532620"
         }
       ]
     },
@@ -36,15 +20,15 @@
       "bookName": "And Then There Were None",
       "details": [
         {
-          "id":"06",
+          "id": "06",
           "author": "Agatha Christie",
           "genre": "Mystery",
           "publicYear": "1939",
-          "descript":"A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative",
-          "image":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602",
-          "background":"https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
+          "descript": "A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative",
+          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602",
+          "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
         }
       ]
     }
-    ]
+  ]
 }
