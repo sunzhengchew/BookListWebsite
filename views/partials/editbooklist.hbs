@@ -1,11 +1,11 @@
  <form 
-          class = "ui stacked segment form" 
+          class = "ui stacked segment form hide" 
           action="/dashboard/updatebooklist/{{id}}" 
-          method="POST"
+          method="POST" id="edit"
         >
     <section
       class="ui secondary inverted teal left aligned middle aligned segment"
-      style="border-style:outset"
+      style="border-style:outset" id="edit"
     >
       <h3 class="ui header" style="font-family:cursive">
         <span class="ui input">
@@ -15,7 +15,7 @@
 					  value = "{{category}}">
               </span>
       </h3>
-      <button type = "reset" class="ui icon button" 
+      <button type = "reset" class="ui icon button" id="hideEdit" 
 	          title="Exit without saving">
         <i class="ui undo icon"></i>
       </button>

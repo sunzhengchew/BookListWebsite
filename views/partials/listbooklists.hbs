@@ -5,7 +5,17 @@
   <h2><div class="dashtitle">Booklist Collection Dashboard</div></h2>
 
   {{#each booklists}}
-        {{> listonebooklist playlistId=../id}}
-        {{> editbooklist playlistId=../id}}
+        {{> listonebooklist booklistId=../id}}
+        {{> editbooklist booklistId=../id}}
   {{/each}}
+  <script>
+    document.querySelector("#showEdit").addEventListener ('click', () => {
+        document.querySelector("#booklist").style.display = "none";
+        document.querySelector("#edit").style.display = "table-row";
+    })
+    document.querySelector("#hideEdit").addEventListener ('click', () => {
+        document.querySelector("#booklist").style.display = "table-row";
+        document.querySelector("#edit").style.display = "none";
+    })
+</script>
 </section>
