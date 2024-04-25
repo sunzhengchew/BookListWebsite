@@ -5,33 +5,17 @@
   <h2><div class="dashtitle">Booklist Collection Dashboard</div></h2>
 
   {{#each booklists}}
-  <form 
-          class = "ui stacked segment form" 
-          action="/dashboard/updatebooklist/{{id}}" 
-          method="POST"
-        >
-    <section
-      class="ui secondary inverted teal left aligned middle aligned segment"
-      style="border-style:outset"
-    >
-      <h3 class="ui header" style="font-family:cursive">
-        <span class="ui input">
-               <input type="text" name="category" autofocus required 
-                      title = "Please include a valid Category"
-                      placeholder="Category" 
-					  value = "{{category}}">
-              </span>
-      </h3>
-      <a href="/booklist/{{id}}" class="ui icon button">
-        <i class="open folder icon"></i>
-      </a>
-      <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-      <a href="/dashboard/deletebooklist/{{id}}" class="ui icon button">
-        <i class="trash icon"></i>
-      </a>
-    </section>
-  </form> 
+        {{> listonebooklist booklistId=../id}}
+        {{> editbooklist booklistId=../id}} 
+  <script>
+    document.querySelector("#showEdit").addEventListener ('click', () => {
+        document.querySelector("#song").style.display = "none";
+        document.querySelector("#edit").style.display = "table-row";
+    })
+    document.querySelector("#hideEdit").addEventListener ('click', () => {
+        document.querySelector("#song").style.display = "table-row";
+        document.querySelector("#edit").style.display = "none";
+    })
+</script
   {{/each}}
 </section>
