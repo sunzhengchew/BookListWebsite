@@ -19,6 +19,18 @@ const booklist = {                         // Creating an object named 'booklist
   addBook(request, response) {
     const booklistId = request.params.id;
     const booklist = booklistStore.getBooklist(booklistId);
+    const imageFile = request.files.image;
+    const maxWidth = 400;
+    const maxHeight = 300;
+
+    sharp(imageFile.data) // Use sharp to process the image data
+        .resize({ width: maxWidth, height: maxHeight, fit: 'inside' }) // Resize image to fit within maxWidth and maxHeight
+        .toFile(`${imagePath}/${imageFile.name}`, (err, info) => {
+            if (err) {
+                console.error('Error resizing image:', err);
+                // Handle error appropriately
+                return;
+            }
     const newBook = {
       id: uuidv4(),
       name: request.body.name,
