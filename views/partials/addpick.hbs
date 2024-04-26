@@ -1,5 +1,5 @@
-<form class="ui stacked segment form" action="/picklist/{{id}}/addpick" method="POST">
-  <div class="four fields">
+<form class="ui stacked segment form" action="/playlist/{{singlePlaylist.id}}/addsong" method="POST">
+  <div class="six fields">
     <div class="field">
       <label>Author</label>
       <input type="text" name="author" autofocus required title = "Please include a valid author"
@@ -19,6 +19,16 @@
       <label>Descript</label>
       <input type="text" name="descript" required title = "Please include a valid descript"
 	  placeholder="Enter descript"  >
+    </div>
+    <div class="field">
+      <label>Image</label>
+      <input type="file" name="image" required title = "Please upload a valid image"
+	  placeholder="Upload Image"  >
+    </div>
+    <div class="field">
+      <label>Background</label>
+      <input type="file" name="background" required title = "Please upload a valid image"
+	  placeholder="Upload Background Image"  >
     </div>
   </div>
   <button class="ui blue submit button">Add Details</button>
