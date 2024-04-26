@@ -1,19 +1,7 @@
 {
   "pickBookCollection": [
     {
-      "id": "01",
-      "bookName": "Moby-Dick",
-      "details": [
-        {
-          "id": "04",
-          "author": "Herman Melville",
-          "genre": "Adventure Fiction",
-          "publicYear": "1851",
-          "descript": "A timeless adventure fiction masterpiece, renowned for its exploration of obsession, existential themes, and the symbolic struggle between humanity and nature.",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/moby.jpg?v=1709491808149",
-          "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/whaleback.jpg?v=1709493532620"
-        }
-      ]
+      "id": "01"
     },
     {
       "id": "03",

@@ -32,7 +32,7 @@ const pickboard = {                        // Creating an object named 'pickboar
       bookName: request.body.bookName,
       details:mypick.details
     };
-    mypick.editBooklist(booklistId,updatedBooklist);
+    mypick.editPicklist(picklistId,updatedPicklist);
     response.redirect('/dashboard/');
 },
 };
