@@ -1,3 +1,8 @@
+<style>
+  h3{
+    text-align:center;
+  }
+</style>
 {{#if singlePicklist.details}}
 {{#each singlePicklist.details}}
 <body style="background-image:url({{background}});">
@@ -18,10 +23,10 @@
       <i class="calendar outline icon"></i>Public in: {{publicYear}}
      </div>
      </div>
+{{/each}}
   {{else}}
     <h3 class="ui message">
-      Empty Picklist!
+      Start Adding details for your books!
     </h3>
   </body>
-{{/each}}
 {{/if}}
