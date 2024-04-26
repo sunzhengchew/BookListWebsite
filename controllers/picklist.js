@@ -29,7 +29,7 @@ const picklist = {                                    // Creating an object name
       background:request.files.background,
     };
     mypick.addPick(picklistId, newPick);
-    response.redirect('/playlist/' + playlistId);
+    response.redirect('/picklist/' + picklistId);
 },
   
 };

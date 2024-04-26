@@ -35,4 +35,5 @@ router.post('/booklist/:id/updatebook/:bookid', booklist.updateBook);
 router.post('/dashboard/updatebooklist/:id', dashboard.updateBooklist);
 router.post('/pickboard/updatepicklist/:id', pickboard.updatePicklist);
 router.post('/pickboard/addpicklist', pickboard.addPicklist);
+router.post('/picklist/:id/addsong', playlist.addSong);
 export default router;
