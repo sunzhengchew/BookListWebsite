@@ -1,0 +1,32 @@
+<form
+  class="ui stacked segment form"
+  action="/pickboard/updatepicklist/{{id}}"
+  method="POST"
+>
+  <section
+    class="ui secondary inverted teal left aligned middle aligned segment"
+    style="border-style:outset"
+  >
+    <h3 class="ui header" style="font-family:cursive">
+      <span class="ui input">
+        <input
+          type="text"
+          name="bookName"
+          autofocus
+          required
+          title="Please include a valid bookName"
+          placeholder="BookName"
+          value="{{bookName}}"
+        />
+      </span>
+    </h3>
+    <button type = "reset" class="ui icon button" 
+	          title="Exit without saving">
+        <i class="ui undo icon"></i>
+      </button>
+      <button type = "submit"  class="ui icon button" 
+	          title="Save changes">
+        <i class="ui save icon"></i>
+      </button>
+  </section>
+</form>

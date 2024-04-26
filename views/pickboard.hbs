@@ -1,38 +1,11 @@
 {{> menu id="pickboard"}}
 
-<style>
-
-</style>
-
 <section class="ui secondary inverted brown left aligned middle aligned segment">
   
   <h2><div class="dashtitle">My highlighted books</div></h2>
 
   {{#each picklists}}
-   <form 
-          class = "ui stacked segment form " 
-          action="/pickboard/updatepicklist/{{id}}" 
-          method="POST"
-        >
-    <section class="ui secondary inverted teal left aligned middle aligned segment" style="border-style:outset">
-      <h3 class="ui header" style="font-family:cursive">
-        <span class="ui input">
-               <input type="text" name="bookName" autofocus required 
-                      title = "Please include a valid bookName"
-                      placeholder="BookName" 
-					  value = "{{bookName}}">
-              </span>
-      </h3>   
-     <a href="/picklist/{{id}}" class="ui icon button">
-    <i class="open folder icon"></i>
-</a>
-       <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-<a href="/pickboard/deletepicklist/{{id}}" class="ui icon button"> 
-    <i class="trash icon"></i>
-</a>
-    </section>
-     </form>
+   {{> listOnePicklist picklistId=../id}}
+   {{> editPicklist picklistId=../id}}
   {{/each}}
 </section>
