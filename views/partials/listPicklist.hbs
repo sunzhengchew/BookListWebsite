@@ -5,5 +5,15 @@
   {{#each picklists}}
    {{> listOnePicklist picklistId=../id}}
    {{> editPicklist picklistId=../id}}
+  <script>
+    document.querySelector("#showEdit").addEventListener ('click', () => {
+        document.querySelector("#picklist").style.display = "none";
+        document.querySelector("#edit").style.display = "table-row";
+    })
+    document.querySelector("#hideEdit").addEventListener ('click', () => {
+        document.querySelector("#picklist").style.display = "table-row";
+        document.querySelector("#edit").style.display = "none";
+    })
+</script>
   {{/each}}
 </section>
