@@ -21,10 +21,14 @@ const picklist = {                                    // Creating an object name
     const picklist = mypick.getPicklist(picklistId);
     const newPick = {
       id: uuidv4(),
-      title: request.body.title,
-      artist: request.body.artist,
+      author: request.body.title,
+      genre: request.body.artist,
+      publicYear:request.body.artist,
+      descript:request.body.artist,
+      image: request.files.image, 
+      background:request.files.background,
     };
-    playlistStore.addSong(playlistId, newSong);
+    mypick.addPick(picklistId, newPick);
     response.redirect('/playlist/' + playlistId);
 },
   
