@@ -1,0 +1,10 @@
+<div class="field">
+      <label>Image</label>
+      <input type="file" name="image" required title = "Please upload a valid image"
+	  placeholder="Upload Image"  >
+    </div>
+    <div class="field">
+      <label>Background</label>
+      <input type="file" name="background" required title = "Please upload a valid image"
+	  placeholder="Upload Background Image"  >
+    </div>

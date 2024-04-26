@@ -21,16 +21,13 @@ const picklist = {                                    // Creating an object name
     const picklist = mypick.getPicklist(picklistId);
     const newPick = {
       id: uuidv4(),
-      author: request.body.title,
-      genre: request.body.artist,
-      publicYear:request.body.artist,
-      descript:request.body.artist,
-      image: request.files.image, 
-      background:request.files.background,
+      author: request.body.author,
+      genre: request.body.genre,
+      publicYear:request.body.publicYear,
+      descript:request.body.descript,
     };
-    mypick.addPick(picklistId, newPick,function(){
+    mypick.addPick(picklistId, newPick);
     response.redirect('/picklist/' + picklistId);
-    });
 },
 };
 

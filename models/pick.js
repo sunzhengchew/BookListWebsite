@@ -42,29 +42,8 @@ const mypick = {
   addPicklist(picklist) {
     this.store.addCollection(this.collection, picklist);
 },
-  async addPick(id, pick, response) {
-    function uploader() {
-      return new Promise(function (resolve, reject) {
-        cloudinary.uploader.upload(
-          pick.image.tempFilePath,
-          pick.background.tempFilePath,
-          function (result, err) {
-            if (err) {
-              console.log(err);
-            }
-            resolve(result);
-          }
-        );
-      });
-    }
-    let result = await uploader();
-    logger.info("cloudinary result", result);
-    pick.image = result.url;
-    pick.background = result.url;
-
+  addPick(id, pick) {
     this.store.addItem(this.collection, id, this.array, pick);
-    response();
-  },
+},
 };
-
 export default mypick;
