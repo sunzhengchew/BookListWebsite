@@ -28,6 +28,9 @@ const mypick = {
   addPicklist(picklist) {
     this.store.addCollection(this.collection, picklist);
 },
+  addPick(id, pick) {
+    this.store.addItem(this.collection, id, this.array, pick);
+},
 };
 
 export default mypick;

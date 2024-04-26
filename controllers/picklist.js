@@ -2,6 +2,7 @@
 
 import logger from '../utils/logger.js';
 import mypick from '../models/pick.js';
+import { v4 as uuidv4 } from 'uuid';
 
 const picklist = {                                    // Creating an object named 'picklist' which contains methods 'createView'
   createView(request, response) {
@@ -15,6 +16,19 @@ const picklist = {                                    // Creating an object name
 
     response.render('picklist', viewData);  // Rendering the 'picklist' view with the specified data
   },
+  addPick(request, response) {
+    const picklistId = request.params.id;
+    const picklist = mypick.getPicklist(picklistId);
+    const newPick = {
+      id: uuidv4(),
+      author: request.body.author,
+      genre: request.body.genre,
+      publicYear:request.body.publicYear,
+      descript:request.body.descript,
+    };
+    mypick.addPick(picklistId, newPick);
+    response.redirect('/picklist/' + picklistId);
+},
   
 };
 

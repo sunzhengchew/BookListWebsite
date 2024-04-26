@@ -1,15 +1,25 @@
-<form class="ui stacked segment form" action="/picklist/{{singlePiclist.id}}/addsong" method="POST">
-  <div class="two fields">
+<form class="ui stacked segment form" action="/picklist/{{singlePicklist.id}}/addpick" method="POST">
+  <div class="four fields">
     <div class="field">
-      <label>Title</label>
-      <input type="text" name="title" autofocus required title = "Please include a valid Title"
-	  placeholder="Title">
+      <label>Author</label>
+      <input type="text" name="author" autofocus required title = "Please include a valid Author"
+	  placeholder="Author">
     </div>
     <div class="field">
-      <label>Artist</label>
-      <input type="text" name="artist" required title = "Please include a valid Artist"
-	  placeholder="Artist"  >
+      <label>Genre</label>
+      <input type="text" name="genre" required title = "Please include a valid Genre"
+	  placeholder="Genre"  >
+    </div>
+    <div class="field">
+      <label>publicYear</label>
+      <input type="text" name="publicYear" required title = "Please include a valid public year"
+	  placeholder="Public Year"  >
+    </div>
+    <div class="field">
+      <label>Descript</label>
+      <input type="text" name="descript" required title = "Please write a description"
+	  placeholder="Description"  >
     </div>
   </div>
-  <button class="ui blue submit button">Add Song</button>
+  <button class="ui blue submit button">Add Recommend Book</button>
 </form>
