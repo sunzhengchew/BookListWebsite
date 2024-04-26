@@ -1,11 +1,4 @@
 {{> menu id="pickboard"}}
 
-<section class="ui secondary inverted brown left aligned middle aligned segment">
-  
-  <h2><div class="dashtitle">My highlighted books</div></h2>
-
-  {{#each picklists}}
-   {{> listOnePicklist picklistId=../id}}
-   {{> editPicklist picklistId=../id}}
-  {{/each}}
-</section>
+{{> listPicklist}}
+{{> addpicklist}}

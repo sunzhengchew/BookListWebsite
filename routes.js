@@ -34,4 +34,5 @@ router.post('/dashboard/addbooklist', dashboard.addBooklist);
 router.post('/booklist/:id/updatebook/:bookid', booklist.updateBook);
 router.post('/dashboard/updatebooklist/:id', dashboard.updateBooklist);
 router.post('/pickboard/updatepicklist/:id', pickboard.updatePicklist);
+router.post('/pickboard/addpicklist', pickboard.addPicklist);
 export default router;

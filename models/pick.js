@@ -25,6 +25,9 @@ const mypick = {
   editPicklist(id,updatepicklist) {
     this.store.editCollection(this.collection, id,updatepicklist);
 },
+  addPicklist(picklist) {
+    this.store.addCollection(this.collection, picklist);
+},
 };
 
 export default mypick;

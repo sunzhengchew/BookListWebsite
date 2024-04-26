@@ -2,6 +2,7 @@
 
 import logger from "../utils/logger.js";
 import mypick from "../models/pick.js";
+import { v4 as uuidv4 } from 'uuid';
 
 const pickboard = {                        // Creating an object named 'pickboard' which contains a method 'createView'
   createView(request, response) {
@@ -35,7 +36,15 @@ const pickboard = {                        // Creating an object named 'pickboar
     mypick.editPicklist(picklistId,updatedPicklist);
     response.redirect('/pickboard');
 },
-
+  addPicklist(request, response) {
+    const newPickList = {
+      id: uuidv4(),
+      bookName: request.body.bookName,
+      details: [],
+    };
+    mypick.addPicklist(newPickList);
+    response.redirect('/pickboard');
+},
 };
 
 export default pickboard;                  // Exporting the 'pickboard' object for external usage
