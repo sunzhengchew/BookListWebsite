@@ -13,7 +13,10 @@ const mypick = {
     return this.store.findAll(this.collection);
   },
   getPicklist(id) {
-    return this.store.findOneBy(this.collection, (picklist => picklist.id === id));
+    return this.store.findOneBy(
+      this.collection, 
+      (picklist) => picklist.id === id
+    );
 },
   removePicklist(id) {
     const picklist = this.getPicklist(id);

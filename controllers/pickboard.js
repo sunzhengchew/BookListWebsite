@@ -30,10 +30,10 @@ const pickboard = {                        // Creating an object named 'pickboar
     const updatedPicklist = {
       id: picklistId,
       bookName: request.body.bookName,
-      details:mypick.details
+      details:picklist.details
     };
     mypick.editPicklist(picklistId,updatedPicklist);
-    response.redirect('/pickboard/');
+    response.redirect('/pickboard');
 },
 };
 
