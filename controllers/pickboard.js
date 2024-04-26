@@ -35,6 +35,7 @@ const pickboard = {                        // Creating an object named 'pickboar
     mypick.editPicklist(picklistId,updatedPicklist);
     response.redirect('/pickboard');
 },
+
 };
 
 export default pickboard;                  // Exporting the 'pickboard' object for external usage
