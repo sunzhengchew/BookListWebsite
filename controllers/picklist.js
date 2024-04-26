@@ -28,10 +28,10 @@ const picklist = {                                    // Creating an object name
       image: request.files.image, 
       background:request.files.background,
     };
-    mypick.addPick(picklistId, newPick);
+    mypick.addPick(picklistId, newPick,function(){
     response.redirect('/picklist/' + picklistId);
+    });
 },
-  
 };
 
 export default picklist; // Exporting the 'picklist' object 
