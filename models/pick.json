@@ -1,12 +1,8 @@
 {
   "pickBookCollection": [
     {
-      "id": "01",
-      "bookName": "Moby-Dicka"
-    },
-    {
       "id": "03",
-      "bookName": "And Then There Were None",
+      "bookName": "And Then There Were Nones",
       "details": [
         {
           "id": "06",
