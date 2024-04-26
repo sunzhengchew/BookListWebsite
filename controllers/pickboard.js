@@ -32,21 +32,8 @@ const pickboard = {                        // Creating an object named 'pickboar
       bookName: request.body.bookName,
       details:mypick.details
     };
-    mypick.editBooklist(booklistId,updatedBooklist);
-    response.redirect('/dashboard/');
-},
-  updatePicklist(request, response) {
-    const picklistId = request.params.id;
-    const picklist = mypick.getPicklist(picklistId);
-
-    logger.debug("updating song " + booklistId);
-    const updatedPicklist = {
-      id: picklistId,
-      category: request.body.category,
-      books:booklist.books
-    };
-    booklistStore.editBooklist(booklistId,updatedBooklist);
-    response.redirect('/dashboard/');
+    mypick.editPicklist(picklistId,updatedPicklist);
+    response.redirect('/pickboard/');
 },
 };
 
