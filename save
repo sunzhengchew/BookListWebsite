@@ -72,3 +72,7 @@
         }
       ]
     }
+    
+    <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
+    <i class="trash icon"></i>
+</a>
