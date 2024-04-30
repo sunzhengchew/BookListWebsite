@@ -44,7 +44,7 @@ const mypick = {
   async addPick(id, pick,response) {
     function uploader(){
     return new Promise(function(resolve, reject) {  
-      cloudinary.uploader.upload(pick.picture.tempFilePath,function(result,err){
+      cloudinary.uploader.upload(pick.image.tempFilePath,function(result,err){
         if(err){console.log(err);}
         resolve(result);
       });
@@ -52,7 +52,8 @@ const mypick = {
   }
   let result = await uploader();
   logger.info('cloudinary result', result);
-  pick.picture = result.url;
+  pick.image = result.url;
+  pick.background = result.url;
     
     this.store.addItem(this.collection, id, this.array, pick);
     response();
