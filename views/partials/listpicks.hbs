@@ -9,7 +9,7 @@
 <form 
           class = "ui form" 
           action="/picklist/{{../id}}/updatepick/{{id}}" 
-          method="POST"
+          method="POST" enctype="multipart/form-data"
         >
 <body style="background-image:url({{background}});">
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
@@ -24,7 +24,7 @@
               </span>
       </a>
         <div class="meta">
-        <span class="date"><i class="pencil alternate icon"></i>
+        <span class="date">
          <span class="ui input">
                <input type="text" name="author" autofocus required 
                       author = "Please include a valid author" placeholder="Author" 
@@ -46,7 +46,17 @@
                <input type="text" name="publicYear" autofocus required 
                       descript = "Please include a valid public year" placeholder="publicYear" 
 					  value = "{{publicYear}}">
-        </span>
+        </span><br><br>
+        <i class="book icon"></i>Book Cover upload: 
+        <span class="ui fluid input">
+            <input type="file" name="image" autofocus required title = "Please include a valid image file"
+	  placeholder="Image">
+            </span><br>
+        <i class="image icon"></i>Background Image upload: 
+        <span class="ui fluid input">
+            <input type="file" name="background" autofocus required title = "Please include a valid background image file"
+	  placeholder="Background">
+            </span>
      </div>
      </div>
   <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
