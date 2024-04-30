@@ -1,5 +1,9 @@
 {
   "bookListsCollection": [
-    
+    {
+      "id": "2a83a3f0-0ab1-4f36-907c-99d308379dca",
+      "category": "try",
+      "books": []
+    }
   ]
 }
