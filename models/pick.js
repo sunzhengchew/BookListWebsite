@@ -2,6 +2,19 @@
 
 import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
+import cloudinary from 'cloudinary';
+
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+try {
+  const env = require("../.data/.env.json");
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
 
 const mypick = {
 
@@ -28,8 +41,21 @@ const mypick = {
   addPicklist(picklist) {
     this.store.addCollection(this.collection, picklist);
 },
-  addPick(id, pick) {
+  async addPick(id, pick,response) {
+    function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(pick.picture.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  pick.picture = result.url;
+    
     this.store.addItem(this.collection, id, this.array, pick);
+    response();
 },
 };
 

@@ -25,11 +25,12 @@ const picklist = {                                    // Creating an object name
       genre: request.body.genre,
       publicYear:request.body.publicYear,
       descript:request.body.descript,
+      image:request.files.image,
+      background:request.files.background,
     };
-    mypick.addPick(picklistId, newPick);
+    mypick.addPick(picklistId, newPick,function(){
     response.redirect('/picklist/' + picklistId);
+});
 },
-  
-};
-
+}
 export default picklist; // Exporting the 'picklist' object 
