@@ -93,6 +93,9 @@ const mypick = {
     logger.info('cloudinary image result', imageResult);
     logger.info('cloudinary background result', backgroundResult);
 
+    updatedPick.image = imageResult.url;
+    updatedPick.background = backgroundResult.url;
+    
     this.store.editItem(this.collection, id, pickId, this.array, updatedPick);
     response();
 },
