@@ -32,7 +32,7 @@
           </span>
         </div>
         <div class="description">
-        <span class="ui input">
+        <span class="ui fluid input">
                <input type="text" name="descript" autofocus required 
                       descript = "Please include a valid descript" placeholder="Description" 
 					  value = "{{descript}}">
@@ -40,7 +40,12 @@
        </div>
        </div>
       <div class="extra content">
-      <i class="calendar outline icon"></i>Public in: {{publicYear}}
+      <i class="calendar outline icon"></i>Public in: 
+        <span class="ui input">
+               <input type="text" name="publicYear" autofocus required 
+                      descript = "Please include a valid public year" placeholder="publicYear" 
+					  value = "{{publicYear}}">
+        </span>
      </div>
      </div>
   <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
