@@ -1,15 +1,3 @@
-<style>
-  h3{
-    text-align:center;
-  }
-</style>
-{{#if details}}
-{{#each details}}
-<form 
-          class = "ui form" 
-          action="/picklist/{{../id}}/updatepick/{{id}}" 
-          method="POST"
-        >
 <body style="background-image:url({{background}});">
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
     <div class="image">
@@ -31,17 +19,9 @@
   <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
     <i class="trash icon"></i>
 </a>
-  <div class="ui buttons">
-  <button class="ui button">Delete</button>
-  <div class="or"></div>
-  <button class="ui positive button active">Edit</button>
-  </div>
   {{else}}
     <h3 class="ui message">
       Start Adding details for your books!
     </h3>
   {{>addpick}}
   </body>
-</form>
-{{/each}}
-{{/if}}
