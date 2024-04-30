@@ -18,7 +18,16 @@
     {
       "id": "370d2982-4a7f-49b4-a97e-0b81698a52ba",
       "bookName": "test",
-      "details": []
+      "details": [
+        {
+          "id": "8e8515df-0af3-4565-bd65-5804adaf726d",
+          "author": "1",
+          "genre": "1",
+          "publicYear": "1",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714510346/iamy1fg2wis7qecx7thn.webp",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714510347/agcdfkhqlv9ifq3wraru.png"
+        }
+      ]
     }
   ]
 }

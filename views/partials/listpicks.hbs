@@ -3,6 +3,7 @@
     text-align:center;
   }
 </style>
+
 {{#if details}}
 {{#each details}}
 <form 
@@ -56,12 +57,12 @@
   <div class="or"></div>
   <button class="ui positive button active">Edit</button>
   </div>
-  {{else}}
-    <h3 class="ui message">
-      Start Adding details for your books!
-    </h3>
-  {{>addpick}}
   </body>
 </form>
 {{/each}}
+{{else}}
+    <h3 class="ui message">
+      Start Adding details for your books!
+    </h3>
+  {{> addpick}}
 {{/if}}
