@@ -41,26 +41,31 @@ const mypick = {
   addPicklist(picklist) {
     this.store.addCollection(this.collection, picklist);
 },
-  async addPick(id, pick,response) {
-    function uploader(){
-    return new Promise(function(resolve, reject) {  
-      cloudinary.uploader.upload(pick.image.tempFilePath,function(result,err){
-        if(err){console.log(err);}
-        resolve(result);
-      });
-    });
-    return new Promise(function(resolve, reject) {  
-      cloudinary.uploader.upload(pick.background.tempFilePath,function(result,err){
-        if(err){console.log(err);}
-        resolve(result);
-      });
-    });
-  }
-  let result = await uploader();
-  logger.info('cloudinary result', result);
-  pick.image = result.url;
-  pick.background = result.url;
+  async addPick(id, pick, response) {
+    // function for uploading image
+    async function uploadImage(image) {
+        return new Promise((resolve, reject) => {
+            cloudinary.uploader.upload(image.tempFilePath, function (result, err) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(result);
+                }
+            });
+        });
+    }
+
+    let imageResult = await uploadImage(pick.image);
+    let backgroundResult = await uploadImage(pick.background);
+
     
+    logger.info('cloudinary image result', imageResult);
+    logger.info('cloudinary background result', backgroundResult);
+
+    // Update pick object with image URLs
+    pick.image = imageResult.url;
+    pick.background = backgroundResult.url;
+
     this.store.addItem(this.collection, id, this.array, pick);
     response();
 },
