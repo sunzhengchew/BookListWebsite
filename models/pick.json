@@ -14,6 +14,11 @@
           "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
         }
       ]
+    },
+    {
+      "id": "370d2982-4a7f-49b4-a97e-0b81698a52ba",
+      "bookName": "test",
+      "details": []
     }
   ]
 }
