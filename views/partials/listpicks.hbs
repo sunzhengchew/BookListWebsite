@@ -16,12 +16,27 @@
     <img src="{{image}}">
     </div>
     <div class="content">
-        <a class="header" style="text-align:center;padding-bottom:10px;">{{ genre}}</a>
+        <a class="header" style="text-align:center;padding-bottom:10px;"> <span class="ui input">
+               <input type="text" name="genre" autofocus required 
+                      genre = "Please include a valid genre" placeholder="Genre" 
+					  value = "{{genre}}">
+              </span>
+      </a>
         <div class="meta">
-        <span class="date"><i class="pencil alternate icon"></i>{{author}}</span>
+        <span class="date"><i class="pencil alternate icon"></i>
+         <span class="ui input">
+               <input type="text" name="author" autofocus required 
+                      author = "Please include a valid author" placeholder="Author" 
+					  value = "{{author}}">
+              </span>
+          </span>
         </div>
         <div class="description">
-        {{descript}}
+        <span class="ui input">
+               <input type="text" name="descript" autofocus required 
+                      descript = "Please include a valid descript" placeholder="Description" 
+					  value = "{{descript}}">
+        </span>
        </div>
        </div>
       <div class="extra content">
