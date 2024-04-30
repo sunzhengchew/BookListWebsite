@@ -12,40 +12,6 @@
           "descript": "A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative",
           "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602",
           "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
-        },
-        {
-          "id": "5ac36586-c6f2-4464-9390-8e96253063dd",
-          "author": "test",
-          "genre": [
-            "test",
-            "test"
-          ],
-          "publicYear": "1111"
-        },
-        {
-          "id": "f31b6b00-02a3-49a6-a467-1786f3a15fcd",
-          "author": "t",
-          "genre": [
-            "t",
-            "ttttt"
-          ],
-          "publicYear": "111"
-        },
-        {
-          "id": "85cca37a-5333-41fd-8c6d-be4c19349db5",
-          "author": "t",
-          "genre": [
-            "t",
-            "t"
-          ],
-          "publicYear": "1111"
-        },
-        {
-          "id": "cc8774ed-45ab-4a60-91dd-eb25602d42df",
-          "author": "t",
-          "genre": "t",
-          "publicYear": "11",
-          "descript": "t"
         }
       ]
     }
