@@ -49,6 +49,12 @@ const mypick = {
         resolve(result);
       });
     });
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(pick.background.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
   }
   let result = await uploader();
   logger.info('cloudinary result', result);
