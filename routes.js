@@ -37,6 +37,7 @@ router.post('/pickboard/updatepicklist/:id', pickboard.updatePicklist);
 router.post('/pickboard/addpicklist', pickboard.addPicklist);
 router.post('/picklist/:id/addpick', picklist.addPick);
 router.get('/picklist/:id/deletepick/:pickid', picklist.deletePick);
+router.post('/picklist/:id/updatepick/:pickid', picklist.updatePick);
 
 
 export default router;

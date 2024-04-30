@@ -72,6 +72,23 @@ const mypick = {
   removePick(id, pickId) {
     this.store.removeItem(this.collection, id, this.array, pickId);
 },
+  async editBook(id, bookId, updatedBook,response) {
+      function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(updatedBook.image.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  updatedBook.image = result.url;
+
+
+    this.store.editItem(this.collection, id, bookId, this.array, updatedBook);
+    response();
+},
 };
 
 export default mypick;

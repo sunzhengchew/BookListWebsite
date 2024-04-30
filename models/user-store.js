@@ -26,6 +26,7 @@ const userStore = {
   getUserPlaylists(userid) {
   return this.store.findBy(this.collection, (playlist => playlist.userid === userid));
 },
+  
 };
 
 export default userStore;
