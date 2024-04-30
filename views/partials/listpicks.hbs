@@ -3,8 +3,8 @@
     text-align:center;
   }
 </style>
-{{#if singlePicklist.details}}
-{{#each singlePicklist.details}}
+{{#if details}}
+{{#each details}}
 <body style="background-image:url({{background}});">
   
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
@@ -24,6 +24,9 @@
       <i class="calendar outline icon"></i>Public in: {{publicYear}}
      </div>
      </div>
+  <a href="/dashboard/deleteplaylist/{{id}}" class="ui icon button"> 
+    <i class="trash icon"></i>
+</a>
 {{/each}}
   {{else}}
     <h3 class="ui message">

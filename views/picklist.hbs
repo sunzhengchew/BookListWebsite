@@ -1,10 +1,12 @@
 {{> menu}}
+{{#with singlePicklist}}
 <section class="ui secondary inverted brown left aligned middle aligned segment">
   <h2 class="ui header">
     <a href="/pickboard" style="color:white"><i class="undo icon"></i></a>
     <div class = "title">
-    {{singlePicklist.bookName}}
+    {{bookName}}
     </div>
   </h2>
   {{>listpicks}}
+{{/with}}
 </section>

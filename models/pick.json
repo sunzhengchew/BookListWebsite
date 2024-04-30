@@ -48,20 +48,6 @@
           "descript": "t"
         }
       ]
-    },
-    {
-      "id": "028e2412-abbc-4c47-9c1d-9c1d28cede02",
-      "bookName": "test",
-      "details": [
-        {
-          "id": "cc5a827e-e0a4-4158-be3d-773449628e26",
-          "author": "1",
-          "genre": "1",
-          "publicYear": "1",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714499444/wry76fnjdzklv4rochay.avif",
-          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714499445/glxurpx5asiexhbkenf1.webp"
-        }
-      ]
     }
   ]
 }
