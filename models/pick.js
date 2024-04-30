@@ -69,6 +69,9 @@ const mypick = {
     this.store.addItem(this.collection, id, this.array, pick);
     response();
 },
+  removePick(id, pickId) {
+    this.store.removeItem(this.collection, id, this.array, pickId);
+},
 };
 
 export default mypick;

@@ -32,5 +32,12 @@ const picklist = {
       response.redirect("/picklist/" + picklistId);
     });
   },
+  deletePick(request, response) {
+    const picklistId = request.params.id;
+    const pickId = request.params.pickid;
+    logger.debug(`Deleting Pick  $(pickId} from Booklist ${picklistId}`);
+    mypick.removePick(picklistId, pickId);
+    response.redirect('/picklist/' + picklistId);
+},
 };
 export default picklist; // Exporting the 'picklist' object
