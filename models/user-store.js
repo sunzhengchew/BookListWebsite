@@ -23,7 +23,9 @@ const userStore = {
   addUser(user) {
     this.store.addCollection(this.collection, user);
   },
-
+  getUserPlaylists(userid) {
+  return this.store.findBy(this.collection, (playlist => playlist.userid === userid));
+},
 };
 
 export default userStore;
