@@ -45,9 +45,9 @@ const picklist = {
     logger.debug("updating pick " + pickId);
     const updatedPick = {
       id: pickId,
-      descript: request.body.descript,
       author: request.body.author,
       genre: request.body.genre,
+      descript: request.body.descript,
       publicYear: request.body.publicYear,
       image: request.files.image,
       background:request.files.background,
