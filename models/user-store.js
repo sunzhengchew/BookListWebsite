@@ -34,20 +34,18 @@ const userStore = {
   },
   
   async addUser(user,response) {
-    async function uploadImage(image) {
-        return new Promise((resolve, reject) => {
-            cloudinary.uploader.upload(image.tempFilePath, function (result, err) {
-                if (err) {
-                    reject(err);
-                } else {
-                    resolve(result);
-                }
-            });
-        });
-    }
-  let imageResult = await uploadImage(user.picture);
-  logger.info('cloudinary image result', imageResult);
-  user.picture = imageResult.url;
+    function uploader(){
+    return new Promise(function(resolve, reject) {  
+    
+    cloudinary.uploader.upload(user.picture.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  user.picture = result.url;
 
   this.store.addCollection(this.collection, user);
   response();

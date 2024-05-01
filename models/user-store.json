@@ -5,7 +5,8 @@
       "lastName": "simpson",
       "email": "homer@simpson.com",
       "password": "secret",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "picture": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/avatar.png?v=1709433470326"
     },
     {
       "firstName": "marge",
@@ -15,18 +16,18 @@
       "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
     },
     {
-      "firstName": "bruh",
-      "lastName": "bruh",
-      "email": "vrvrv",
-      "password": "vrvrv",
-      "id": "1f6a35a6-7bf7-4ff8-8187-6898f8d14a80"
+      "firstName": " b",
+      "lastName": "bb",
+      "email": "sunzhengc@gmail.com",
+      "password": "uuhihi",
+      "id": "2395e3d5-eb97-444f-9598-219997a3b2ea"
     },
     {
-      "firstName": "bruh",
-      "lastName": "bruh",
-      "email": "vrvrv",
-      "password": "vrvrv",
-      "id": "d5a0eef8-68fa-422f-a243-0c4ce83bb6eb"
+      "firstName": "hello",
+      "lastName": "f",
+      "email": "sunzhengc@gmail.com",
+      "password": "sz041006",
+      "id": "db8ab7af-15b7-443c-91f4-8cd7ba61703b"
     }
   ]
 }

@@ -40,7 +40,6 @@ signup(request, response) {
  //register function to render the registration page for adding a new user
   register(request, response) {
     const user = request.body;
-    const profile = request.files.picture;
     user.id = uuidv4();
     userStore.addUser(user,function(){
     logger.info('registering' + user.email);

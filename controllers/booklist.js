@@ -15,6 +15,7 @@ const booklist = {                         // Creating an object named 'booklist
       title: 'Booklist',
       singleBooklist: booklistStore.getBooklist(booklistId), // Fetching booklist data from 'booklistStore' based on id
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture, 
   };
 
     response.render('booklist', viewData); 

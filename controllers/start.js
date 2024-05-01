@@ -66,6 +66,7 @@ const start = {                                // Creating an object named 'star
       displayMaxBooklists: maxBooklists,
       displayMinBooklists:minBooklists,
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+      picture: loggedInUser.picture, 
     };
     
     //logger.debug(viewData);
