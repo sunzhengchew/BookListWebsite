@@ -5,13 +5,24 @@
       "bookName": "And Then There Were Nones",
       "details": [
         {
-          "id": "06",
           "author": "Agatha Christie",
           "genre": "Mystery",
           "publicYear": "1939",
           "descript": "A classic mystery novel by Agatha Christie, known for its suspenseful plot and ingenious storytelling, captivating readers with its compelling whodunit narrative",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/name.jpg?v=1709492400602",
-          "background": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/detect.png?v=1709494030073"
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714522688/mgbpthoyi5ph8t1bmcha.jpg",
+          "background": {
+            "name": "cover.jpg",
+            "data": {
+              "type": "Buffer",
+              "data": []
+            },
+            "size": 274248,
+            "encoding": "7bit",
+            "tempFilePath": "/app/tmp/tmp-2-1714522688476",
+            "truncated": false,
+            "mimetype": "image/jpeg",
+            "md5": "1c79334f61ede715db32de279d1b5fd8"
+          }
         }
       ]
     },

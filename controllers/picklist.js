@@ -39,16 +39,16 @@ const picklist = {
     mypick.removePick(picklistId, pickId);
     response.redirect('/picklist/' + picklistId);
 },
-  updatePickk(request, response) {
+  updatePick(request, response) {
     const picklistId = request.params.id;
     const pickId = request.params.bookid;
     logger.debug("updating pick " + pickId);
     const updatedPick = {
       id: pickId,
-      name: request.body.name,
       author: request.body.author,
       genre: request.body.genre,
       publicYear: request.body.publicYear,
+      descript:request.body.descript,
       image: request.files.image,
       background:request.files.background,
     };
