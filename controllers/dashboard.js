@@ -12,7 +12,8 @@ const dashboard = {                          // Creating an object named 'dashbo
     if (loggedInUser) {
     const viewData = {
       title: "Booklist App Dashboard",
-      booklists: booklistStore.getAllBooklists() // Calling 'getAllBooklists' function in mycollection.js
+      booklists: booklistStore.getUserBooklists(loggedInUser.id),
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     
     logger.debug(viewData.bookListsCollection);
