@@ -2,6 +2,19 @@
 
 import logger from '../utils/logger.js';
 import JsonStore from './json-store.js';
+import cloudinary from 'cloudinary';
+
+import { createRequire } from "module";
+const require = createRequire(import.meta.url);
+
+try {
+  const env = require("../.data/.env.json");
+  cloudinary.config(env.cloudinary);
+}
+catch(e) {
+  logger.info('You must provide a Cloudinary credentials file - see README.md');
+  process.exit(1);
+}
 
 const userStore = {
 
@@ -20,7 +33,18 @@ const userStore = {
     return this.store.findOneBy(this.collection, (user => user.email === email));
   },
   
-  addUser(user) {
+  async addUser(user,response) {
+    async function uploadImage(image) {
+        return new Promise((resolve, reject) => {
+            cloudinary.uploader.upload(image.tempFilePath, function (result, err) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(result);
+                }
+            });
+        });
+    }
     this.store.addCollection(this.collection, user);
   },
 
