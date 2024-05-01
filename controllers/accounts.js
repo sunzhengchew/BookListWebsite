@@ -39,16 +39,8 @@ signup(request, response) {
   
  //register function to render the registration page for adding a new user
   register(request, response) {
-    const userId = request.params.id;
-    const user = userStore.getUserById(userId);
-    const newUser={
-      id: uuidv4(),
-      firstName:request.body.firstName,
-      lastName:request.body.lastName,
-      email:request.body.email,
-      password:request.body.password,
-      picture:request.files.picture,
-  }
+    const user = request.body;
+    user.id = uuidv4();
     userStore.addUser(user,function(){
     logger.info('registering' + user.email);
     const regis = userStore.getUserByEmail(request.body.email);
