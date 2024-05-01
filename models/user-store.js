@@ -33,20 +33,7 @@ const userStore = {
     return this.store.findOneBy(this.collection, (user => user.email === email));
   },
   
-  async addUser(user,response) {
-    function uploader(){
-    return new Promise(function(resolve, reject) {  
-    
-    cloudinary.uploader.upload(user.picture.tempFilePath,function(result,err){
-        if(err){console.log(err);}
-        resolve(result);
-      });
-    });
-  }
-  let result = await uploader();
-  logger.info('cloudinary result', result);
-  user.picture = result.url;
-
+  addUser(user,response) {
   this.store.addCollection(this.collection, user);
   response();
 },

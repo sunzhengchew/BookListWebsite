@@ -1,6 +1,6 @@
 {{> welcomemenu id="signup"}}
 
-<form class="ui stacked olive inverted segment form" action="/register" method="POST" enctype=“multipart/form-data”>
+<form class="ui stacked olive inverted segment form" action="/register" method="POST">
   <h3 class="ui header">Register</h3>
   <div class="two fields">
     <div class="field">
@@ -20,10 +20,5 @@
     <label for="password">Password</label>
     <input type="password" name="password" required>
   </div>
-  <div class="field">
-      <label>Profile picture</label>
-      <input type="file" name="picture" required title = "Please upload a profile"
-	  placeholder="Picture"  >
-    </div>
   <button class="ui blue submit button">Submit</button>
 </form>
