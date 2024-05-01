@@ -3,17 +3,7 @@
     {
       "id": "d19a1fa1-ffb0-4c09-a256-25fcef6cd3fc",
       "bookName": "bruh",
-      "details": [
-        {
-          "id": "a53c3ddd-5dc9-4b06-9ce4-c82cedf814e9",
-          "author": "a",
-          "genre": "a",
-          "publicYear": "111",
-          "descript": "nn",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533800/xmik1s0h07asjb5pktgn.jpg",
-          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533801/yl3pu6t7hdu1s2xeuahl.webp"
-        }
-      ]
+      "details": []
     },
     {
       "id": "8a26859e-db10-42f4-98fa-876c4bfc4d38",
