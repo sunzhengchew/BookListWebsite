@@ -1,96 +1,12 @@
-{
-      "id": "01",
-      "category": "Classic",
-      "books": [
-        {
-          "id": "04",
-          "name": "One Hundred Years of Solitude",
-          "author": "Gabriel García Márquez",
-          "genre": "Magic realism test",
-          "publicYear": "1967",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1713883145/vfifkdblkfo0oc8jkgil.jpg"
-        },
-        {
-          "id": "05",
-          "name": "The Catcher in the Rye",
-          "author": "J.D. Salinger",
-          "genre": "Bildungsroman",
-          "publicYear": "1951",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/catch.png?v=1709496691971"
-        },
-        {
-          "id": "06",
-          "name": "Adventures of Huckleberry Finn",
-          "author": " Mark Twain",
-          "genre": "Fiction",
-          "publicYear": "1951",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/adventure.jpeg?v=1709496689968"
-        }
-      ]
-    },
-    {
-      "id": "02",
-      "category": "Novel",
-      "books": [
-        {
-          "id": "07",
-          "name": "Before the Coffee Gets Cold",
-          "author": "Toshikazu Kawaguchi",
-          "genre": "Magical Realism",
-          "publicYear": "2015",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/coffee.jpeg?v=1709497167936"
-        },
-        {
-          "id": "08",
-          "name": "To Kill a Mockingbird",
-          "author": "Harper Lee",
-          "genre": "Bildungsroman",
-          "publicYear": "1960",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/bird%20copy.jpg?v=1709497167581"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "category": "Manga",
-      "books": [
-        {
-          "id": "09",
-          "name": "One Piece",
-          "author": "Eiichiro Oda",
-          "genre": "Adventure",
-          "publicYear": "since 1997",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/onepice.jpeg?v=1709497171493"
-        },
-        {
-          "id": "10",
-          "name": "Sasaki to Miyano",
-          "author": "Shō Harusono",
-          "genre": "Comedy",
-          "publicYear": "since 2016",
-          "image": "https://cdn.glitch.global/6d279091-10e0-44aa-91a9-405dacd6b0b1/ssk.jpeg?v=1709497310931"
-        }
-      ]
-    }
-    
-    <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
-    <i class="trash icon"></i>
-</a>
-
-async editPick(id, bookId, updatedBook,response) {
-      function uploader(){
-    return new Promise(function(resolve, reject) {  
-      cloudinary.uploader.upload(updatedBook.image.tempFilePath,function(result,err){
-        if(err){console.log(err);}
-        resolve(result);
-      });
-    });
-  }
-  let result = await uploader();
-  logger.info('cloudinary result', result);
-  updatedBook.image = result.url;
-
-
-    this.store.editItem(this.collection, id, bookId, this.array, updatedBook);
-    response();
-},
+const user = request.body;
+    user.id = uuidv4();
+    userStore.addUser(user,function(){
+    logger.info('registering' + user.email);
+    const regis = userStore.getUserByEmail(request.body.email);
+    if (regis) {
+      response.cookie('booklist', regis.email);
+      logger.info('logging in' + regis.email);
+      response.redirect('/start');
+    } else {
+      response.redirect('/login');
+    }})
