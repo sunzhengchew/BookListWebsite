@@ -1,3 +1,9 @@
 {
-  "bookListsCollection": []
+  "bookListsCollection": [
+    {
+      "id": "4dcd2d6a-8417-4209-8996-7245cc86cfd9",
+      "category": "nn",
+      "books": []
+    }
+  ]
 }

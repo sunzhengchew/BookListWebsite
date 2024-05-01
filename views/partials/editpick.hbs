@@ -1,9 +1,9 @@
+<body class="hide" style="background-image:url({{background}});" id="edit">
 <form 
           class = "ui form hide" 
           action="/picklist/{{picklistId}}/updatepick/{{id}}" 
-          method="POST" enctype="multipart/form-data" id="edit" 
-        >
-<body style="background-image:url({{background}});">
+          method="POST" enctype="multipart/form-data" 
+        >  
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
     <div class="image">
     <img src="{{image}}">
@@ -60,13 +60,7 @@
   <button type = "submit"  class="ui icon positive button" 
 	          title="Save changes">Save</button>
 </div>
-     </div>
-  <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
-    <i class="trash icon"></i>
-</a>
+</div>
 
-  </body>
-  <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-</form>
+</form>  
+</body>
