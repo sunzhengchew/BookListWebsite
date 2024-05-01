@@ -72,32 +72,21 @@ const mypick = {
   removePick(id, pickId) {
     this.store.removeItem(this.collection, id, this.array, pickId);
 },
-  async editPick(id, pickId,updatePick, response) {
-    // function for uploading image
-    async function uploadImage(image) {
-        return new Promise((resolve, reject) => {
-            cloudinary.uploader.upload(image.tempFilePath, function (result, err) {
-                if (err) {
-                    reject(err);
-                } else {
-                    resolve(result);
-                }
-            });
-        });
-    }
+  async editBook(id, bookId, updatedBook,response) {
+      function uploader(){
+    return new Promise(function(resolve, reject) {  
+      cloudinary.uploader.upload(updatedBook.image.tempFilePath,function(result,err){
+        if(err){console.log(err);}
+        resolve(result);
+      });
+    });
+  }
+  let result = await uploader();
+  logger.info('cloudinary result', result);
+  updatedBook.image = result.url;
 
-    let imageResult = await uploadImage(updatePick.image);
-    let backgroundResult = await uploadImage(updatePick.background);
 
-    
-    logger.info('cloudinary image result', imageResult);
-    logger.info('cloudinary background result', backgroundResult);
-
-    // Update pick object with image URLs
-    updatePick.image = imageResult.url;
-    updatePick.background = backgroundResult.url;
-    
-    this.store.editItem(this.collection, id, pickId, this.array, updatePick);
+    this.store.editItem(this.collection, id, bookId, this.array, updatedBook);
     response();
 },
 };
