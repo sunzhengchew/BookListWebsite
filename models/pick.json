@@ -31,12 +31,24 @@
       "bookName": "test",
       "details": [
         {
-          "id": "8e8515df-0af3-4565-bd65-5804adaf726d",
           "author": "1",
           "genre": "1",
           "publicYear": "1",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714510346/iamy1fg2wis7qecx7thn.webp",
-          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714510347/agcdfkhqlv9ifq3wraru.png"
+          "descript": "m",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714522862/stiuunsz8q0urnufb0le.jpg",
+          "background": {
+            "name": "cover.jpg",
+            "data": {
+              "type": "Buffer",
+              "data": []
+            },
+            "size": 274248,
+            "encoding": "7bit",
+            "tempFilePath": "/app/tmp/tmp-10-1714522862638",
+            "truncated": false,
+            "mimetype": "image/jpeg",
+            "md5": "1c79334f61ede715db32de279d1b5fd8"
+          }
         }
       ]
     }

@@ -41,7 +41,7 @@ const picklist = {
 },
   updatePick(request, response) {
     const picklistId = request.params.id;
-    const pickId = request.params.bookid;
+    const pickId = request.params.pickid;
     logger.debug("updating pick " + pickId);
     const updatedPick = {
       id: pickId,
