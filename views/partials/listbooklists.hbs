@@ -3,7 +3,7 @@
 >
 
   <h2><div class="dashtitle">Booklist Collection Dashboard</div></h2>
-
+{{#if booklists}}
   {{#each booklists}}
         {{> listonebooklist booklistId=../id}}
         {{> editbooklist booklistId=../id}}
@@ -18,4 +18,18 @@
     })
 </script>
   {{/each}}
+  {{else}}
+    <div class="ui olive large icon message">
+     <i class="huge icons">
+  <i class="book icon"></i>
+  <i class="bottom right corner add icon"></i>
+</i>
+  <div class="">
+    <div class="header">
+      Start Adding A Booklist
+    </div>
+    <p>Tips: Use a genre as a Start.</p>
+  </div>
+    </div>
+{{/if}}
 </section>

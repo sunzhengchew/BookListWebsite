@@ -1,18 +1,3 @@
 {
-  "bookListsCollection": [
-    {
-      "id": "2a83a3f0-0ab1-4f36-907c-99d308379dca",
-      "category": "try",
-      "books": [
-        {
-          "id": "2408314a-dacd-47f8-9cec-527d8eff703d",
-          "name": "4",
-          "author": "4",
-          "genre": "4",
-          "publicYear": "99",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714531815/gpsw6nlzgid5y79ubxs2.webp"
-        }
-      ]
-    }
-  ]
+  "bookListsCollection": []
 }

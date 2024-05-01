@@ -1,7 +1,7 @@
 <section class="ui secondary inverted brown left aligned middle aligned segment">
   
   <h2><div class="dashtitle">My highlighted books</div></h2>
-
+  {{#if picklists}}
   {{#each picklists}}
    {{> listOnePicklist picklistId=../id}}
    {{> editPicklist picklistId=../id}}
@@ -16,4 +16,9 @@
     })
 </script>
   {{/each}}
+  {{else}}
+  <h3 class="ui message">
+      Start Point Out Your Favourite Books!
+    </h3>
+  {{/if}}
 </section>
