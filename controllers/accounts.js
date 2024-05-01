@@ -30,7 +30,7 @@ const accounts = {
   },
   
  //signup function to render signup page
-  signup(request, response) {
+signup(request, response) {
     const viewData = {
       title: 'Login to the Service',
     };
@@ -40,16 +40,25 @@ const accounts = {
  //register function to render the registration page for adding a new user
   register(request, response) {
     const user = request.body;
+    const profile = request.files.picture;
     user.id = uuidv4();
-    userStore.addUser(user);
+    user.profile = 
+    userStore.addUser(user,function(){
     logger.info('registering' + user.email);
-    response.redirect('/');
+    const regis = userStore.getUserByEmail(request.body.email);
+    if (regis) {
+      response.cookie('booklist', regis.email);
+      logger.info('logging in' + regis.email);
+      response.redirect('/start');
+    } else {
+      response.redirect('/login');
+    }})
   },
   
   //authenticate function to check user credentials and either render the login page again or the start page.
   authenticate(request, response) {
     const user = userStore.getUserByEmail(request.body.email);
-    if (user) {
+    if (user && user.password === request.body.password) {
       response.cookie('booklist', user.email);
       logger.info('logging in' + user.email);
       response.redirect('/start');
