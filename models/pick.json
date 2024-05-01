@@ -1,3 +1,36 @@
 {
-  "pickBookCollection": []
+  "pickBookCollection": [
+    {
+      "userid": "9f1a522c-2562-4c66-b2b6-651bfa61b848",
+      "id": "3cc654a1-8545-4bcf-89f4-ae28d0a6fcc3",
+      "bookName": "ww",
+      "details": [
+        {
+          "id": "209326a5-1c8e-4ebb-85d9-052f322a41c6",
+          "author": "dd",
+          "genre": "dd",
+          "publicYear": "dd",
+          "descript": "hb5thby5bny6numnunb6unynhnbhtnbtb",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576284/kxh6szlzygsmof3bubdu.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576284/fq2se9ggr1tixjf2haxj.jpg"
+        }
+      ]
+    },
+    {
+      "userid": "908fc0a6-7411-491d-8b5b-90bf515003d7",
+      "id": "4b2993e2-9701-48d6-bb37-debf11b79988",
+      "bookName": "Test",
+      "details": [
+        {
+          "id": "9967a6b1-3806-4e77-9f8f-ae8e441d48f0",
+          "author": "Test",
+          "genre": "Test",
+          "publicYear": "99999",
+          "descript": "A description",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576490/ho0vjwe1nwuv2fhhn9dy.png",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576490/plyrgus5t9me59avqmwh.png"
+        }
+      ]
+    }
+  ]
 }

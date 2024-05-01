@@ -26,6 +26,21 @@
           "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714575457/i6fjfwkfpkare6mtmjwi.webp"
         }
       ]
+    },
+    {
+      "userid": "908fc0a6-7411-491d-8b5b-90bf515003d7",
+      "id": "5a884b98-5983-47b7-a874-c4573795b8a5",
+      "category": "Test",
+      "books": [
+        {
+          "id": "8da33dfd-587e-4047-9b06-3500e4fc853d",
+          "name": "Test",
+          "author": "Test",
+          "genre": "Testing",
+          "publicYear": "9999",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576440/zrskhu92s14hw0zitazo.webp"
+        }
+      ]
     }
   ]
 }

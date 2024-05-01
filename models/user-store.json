@@ -70,6 +70,13 @@
       "email": "12345",
       "password": "12345",
       "id": "9f1a522c-2562-4c66-b2b6-651bfa61b848"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "Test",
+      "email": "test@test.com",
+      "password": "test",
+      "id": "908fc0a6-7411-491d-8b5b-90bf515003d7"
     }
   ]
 }
