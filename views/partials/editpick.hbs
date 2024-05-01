@@ -1,7 +1,7 @@
 <form 
           class = "ui hide form" 
           action="/picklist/{{picklistId}}/updatepick/{{id}}" 
-          method="POST" enctype="multipart/form-data" id="hideEdit" 
+          method="POST" enctype="multipart/form-data" id="edit" 
         >
 <body style="background-image:url({{background}});">
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
@@ -54,7 +54,7 @@
             </span>
      </div>
     <div class="ui buttons">
-  <button type = "reset" class="ui icon button" 
+  <button type = "reset" class="ui icon button"  id="hideEdit"
 	          title="Exit without saving">Cancel</button>
   <div class="or"></div>
   <button type = "submit"  class="ui icon positive button" 
