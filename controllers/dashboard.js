@@ -8,15 +8,16 @@ import accounts from './accounts.js';
 const dashboard = {                          // Creating an object named 'dashboard' which contains a method 'createView'
   createView(request, response) {
     logger.info("Dashboard page loading!");
-    
+    const loggedInUser = accounts.getCurrentUser(request);
+    if (loggedInUser) {
     const viewData = {
       title: "Booklist App Dashboard",
       booklists: booklistStore.getAllBooklists() // Calling 'getAllBooklists' function in mycollection.js
     };
     
     logger.debug(viewData.bookListsCollection);
-    
     response.render('dashboard', viewData);
+    }
   },
   addBooklist(request, response) {
     const newBookList = {
