@@ -15,13 +15,16 @@ const dashboard = {                          // Creating an object named 'dashbo
       booklists: booklistStore.getUserBooklists(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
-    
-    logger.debug(viewData.bookListsCollection);
+    logger.info('about to render' + viewData.booklists);
     response.render('dashboard', viewData);
     }
+    else response.redirect('/');
   },
   addBooklist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.debug(loggedInUser.id);
     const newBookList = {
+      userid: loggedInUser.id,
       id: uuidv4(),
       category: request.body.category,
       books: [],
