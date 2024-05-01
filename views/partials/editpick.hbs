@@ -1,7 +1,7 @@
 <form 
-          class = "ui form" 
+          class = "ui hide form" 
           action="/picklist/{{picklistId}}/updatepick/{{id}}" 
-          method="POST" enctype="multipart/form-data"
+          method="POST" enctype="multipart/form-data" id="hideEdit" 
         >
 <body style="background-image:url({{background}});">
   <div class="ui card" style="margin-right: auto; margin-left: auto;">
@@ -53,6 +53,13 @@
 	  placeholder="Background">
             </span>
      </div>
+    <div class="ui buttons">
+  <button type = "reset" class="ui icon button" 
+	          title="Exit without saving">Cancel</button>
+  <div class="or"></div>
+  <button type = "submit"  class="ui icon positive button" 
+	          title="Save changes">Save</button>
+</div>
      </div>
   <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
     <i class="trash icon"></i>
