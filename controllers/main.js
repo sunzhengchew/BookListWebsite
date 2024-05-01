@@ -4,10 +4,9 @@ import creator from "../models/info.js";
 import booklistStore from '../models/mycollection.js';
 import accounts from './accounts.js';
 
-const start = {                                // Creating an object named 'start' which contains methods 'createView'
+const main = {                                // Creating an object named 'start' which contains methods 'createView'
   createView(request, response) {
     logger.info("Start page loading!");
-    const loggedInUser = accounts.getCurrentUser(request);
     const booklists = booklistStore.getUserBooklists(loggedInUser.id); 
     
     let numBooklists = booklists.length; //amount of the booklist
@@ -56,7 +55,6 @@ const start = {                                // Creating an object named 'star
   }
     
     }
-    if (loggedInUser) {
     const viewData = {
       title: "Welcome to the Booklist app!",
       info: creator.getAppInfo(), // Retrieving application information using the 'getAppInfo' method from info.js
@@ -72,7 +70,6 @@ const start = {                                // Creating an object named 'star
     //logger.debug(viewData);
     response.render('start', viewData);   
     }
-  },
 };
 
-export default start; // Exporting the 'picklist' object 
+export default main;
