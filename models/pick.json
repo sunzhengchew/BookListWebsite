@@ -1,3 +1,26 @@
 {
-  "pickBookCollection": []
+  "pickBookCollection": [
+    {
+      "id": "d19a1fa1-ffb0-4c09-a256-25fcef6cd3fc",
+      "bookName": "bruh",
+      "details": [
+        {
+          "id": "041ff713-2490-4941-8158-d458a8d99100",
+          "author": "q",
+          "genre": "q",
+          "publicYear": "1111",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714532948/jaoxvqye9d2an3j3qki6.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714532948/dkh81bphd6xytohwpggd.jpg"
+        },
+        {
+          "id": "79e02d57-0cb1-43a5-912d-3dc564f39b0b",
+          "author": "q",
+          "genre": "q",
+          "publicYear": "1111",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533336/ufg9myx3cixayfsdtl0l.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533337/o2lmehrnyplgg9brtusr.jpg"
+        }
+      ]
+    }
+  ]
 }

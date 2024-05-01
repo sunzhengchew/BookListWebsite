@@ -6,75 +6,21 @@
 
 {{#if details}}
 {{#each details}}
-<form 
-          class = "ui form" 
-          action="/picklist/{{../id}}/updatepick/{{id}}" 
-          method="POST" enctype="multipart/form-data"
-        >
-<body style="background-image:url({{background}});">
-  <div class="ui card" style="margin-right: auto; margin-left: auto;">
-    <div class="image">
-    <img src="{{image}}">
-    </div>
-    <div class="content">
-        <a class="header" style="text-align:center;padding-bottom:10px;"> <span class="ui input">
-               <input type="text" name="genre" autofocus required 
-                      genre = "Please include a valid genre" placeholder="Genre" 
-					  value = "{{genre}}">
-              </span>
-      </a>
-      
-        <div class="meta">
-        <span class="date">
-         <span class="ui input">
-               <input type="text" name="author" autofocus required 
-                      author = "Please include a valid author" placeholder="Author" 
-					  value = "{{author}}">
-              </span>
-          </span>
-        </div>
-      
-        <div class="description">
-        <span class="ui input">
-               <input type="text" name="descript" autofocus required 
-                      descript = "Please include a valid descript" placeholder="Descript" 
-					  value = "{{descript}}">
-              </span>
-       </div>
-      
-       </div>
-      <div class="extra content">
-      <i class="calendar outline icon"></i>Public in: 
-        <span class="ui input">
-               <input type="text" name="publicYear" autofocus required 
-                      descript = "Please include a valid public year" placeholder="publicYear" 
-					  value = "{{publicYear}}">
-        </span><br><br>
-        <i class="book icon"></i>Book Cover upload: 
-        <span class="ui fluid input">
-            <input type="file" name="image" autofocus required title = "Please include a valid image file"
-	  placeholder="Image">
-            </span><br>
-        <i class="image icon"></i>Background Image upload: 
-        <span class="ui fluid input">
-            <input type="file" name="background" autofocus required title = "Please include a valid background image file"
-	  placeholder="Background">
-            </span>
-     </div>
-     </div>
-  <a href="/picklist/{{../id}}/deletepick/{{id}}" class="ui icon button"> 
-    <i class="trash icon"></i>
-</a>
-
-  </body>
-  <button type = "submit" class="ui icon button">
-                <i class="ui pencil icon"></i>
-              </button>
-</form>
+{{> listonepick picklistId=../id}}
+{{> editpick picklistId=../id}}
 {{/each}}
 {{else}}
-    <h3 class="ui message">
-      Start Adding details for your books!
-    </h3>
+    <div class="ui olive small icon message">
+     <i class="huge icons">
+  <i class="book icon"></i>
+  <i class="bottom right corner info icon"></i>
+</i>
+  <div class="">
+    <div class="header">
+      Start Adding The Details
+    </div>
+    <p>Tips: You can still edit it after you create.</p>
+  </div>
+    </div>
   {{> addpick}}
 {{/if}}
