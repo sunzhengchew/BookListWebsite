@@ -42,7 +42,12 @@ signup(request, response) {
     const userId = request.params.id;
     const user = userStore.getUserById(userId);
     const newUser={
-      id = uuidv4();
+      id: uuidv4(),
+      firstName:request.body.firstName,
+      lastName:request.body.lastName,
+      email:request.body.email,
+      password:request.body.password,
+      picture:request.files.picture,
   }
     userStore.addUser(user,function(){
     logger.info('registering' + user.email);
