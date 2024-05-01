@@ -66,7 +66,7 @@ const main = {                                // Creating an object named 'start
     };
     
     //logger.debug(viewData);
-    response.render('start', viewData);   
+    response.render('main', viewData);   
     }
 };
 
