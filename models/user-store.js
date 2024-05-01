@@ -45,9 +45,13 @@ const userStore = {
             });
         });
     }
-    this.store.addCollection(this.collection, user);
-  },
+  let imageResult = await uploadImage(user.picture);
+  logger.info('cloudinary image result', imageResult);
+  user.picture = imageResult.url;
 
+  this.store.addCollection(this.collection, user);
+  response();
+},
 };
 
 export default userStore;
