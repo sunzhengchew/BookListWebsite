@@ -11,7 +11,7 @@ const picklist = {
     const picklistId = request.params.id;
     const loggedInUser = accounts.getCurrentUser(request);
     logger.debug("Picklist id = " + picklistId);
-    
+    if (loggedInUser) {
     const viewData = {
       title: "Picklist",
       singlePicklist: mypick.getPicklist(picklistId), // Retrieving a specific picklist using the provided picklistId
@@ -19,6 +19,7 @@ const picklist = {
     };
 
     response.render("picklist", viewData); // Rendering the 'picklist' view with the specified data
+    }
   },
   addPick(request, response) {
     const picklistId = request.params.id;

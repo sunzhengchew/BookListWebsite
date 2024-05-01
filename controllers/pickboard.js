@@ -9,16 +9,17 @@ const pickboard = {                        // Creating an object named 'pickboar
   createView(request, response) {
     logger.info("Picklist page loading!");
     const loggedInUser = accounts.getCurrentUser(request);
-    
+    if (loggedInUser) {
     const viewData = {
       title: "Picklist of Book",
-      picklists: mypick.getAllPicklists(),  // Calling 'getAllPicklists' function in pick.js
+      picklists: mypick.getUserPicklists(loggedInUser.id),  // Calling 'getAllPicklists' function in pick.js
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     
     logger.debug(viewData.pickBookCollection);
     
     response.render('pickboard', viewData);
+    }
   },
   deletePicklist(request, response) {
     const picklistId = request.params.id;
@@ -40,7 +41,10 @@ const pickboard = {                        // Creating an object named 'pickboar
     response.redirect('/pickboard');
 },
   addPicklist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    logger.debug(loggedInUser.id);
     const newPickList = {
+      userid: loggedInUser.id,
       id: uuidv4(),
       bookName: request.body.bookName,
       details: [],

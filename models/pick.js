@@ -98,6 +98,9 @@ const mypick = {
     this.store.editItem(this.collection, id, bookId, this.array, updatedPick);
     response();
 },
+  getUserPicklists(userid) {
+  return this.store.findBy(this.collection, (picklist => picklist.userid === userid));
+},
 };
 
 export default mypick;
