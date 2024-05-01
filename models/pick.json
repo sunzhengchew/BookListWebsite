@@ -5,20 +5,28 @@
       "bookName": "bruh",
       "details": [
         {
-          "id": "041ff713-2490-4941-8158-d458a8d99100",
-          "author": "q",
-          "genre": "q",
-          "publicYear": "1111",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714532948/jaoxvqye9d2an3j3qki6.jpg",
-          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714532948/dkh81bphd6xytohwpggd.jpg"
-        },
+          "id": "a53c3ddd-5dc9-4b06-9ce4-c82cedf814e9",
+          "author": "a",
+          "genre": "a",
+          "publicYear": "111",
+          "descript": "nn",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533800/xmik1s0h07asjb5pktgn.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533801/yl3pu6t7hdu1s2xeuahl.webp"
+        }
+      ]
+    },
+    {
+      "id": "8a26859e-db10-42f4-98fa-876c4bfc4d38",
+      "bookName": "de",
+      "details": [
         {
-          "id": "79e02d57-0cb1-43a5-912d-3dc564f39b0b",
-          "author": "q",
-          "genre": "q",
-          "publicYear": "1111",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533336/ufg9myx3cixayfsdtl0l.jpg",
-          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533337/o2lmehrnyplgg9brtusr.jpg"
+          "id": "8ebba2c3-c94e-4d8c-96d0-3b62b69385bd",
+          "author": "Tesy",
+          "genre": "s",
+          "publicYear": "1911",
+          "descript": "test",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533944/lvy3wwhyqih4azfojybv.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714533945/t3fxq7ylmqzajvjxygif.jpg"
         }
       ]
     }

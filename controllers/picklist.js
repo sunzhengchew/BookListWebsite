@@ -25,6 +25,7 @@ const picklist = {
       author: request.body.author,
       genre: request.body.genre,
       publicYear: request.body.publicYear,
+      descript:request.body.descript,
       image: request.files.image,
       background:request.files.background,
     };
