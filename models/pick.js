@@ -73,17 +73,24 @@ const mypick = {
     this.store.removeItem(this.collection, id, this.array, pickId);
 },
   async editPick(id, bookId, updatedBook,response) {
-      function uploader(){
-    return new Promise(function(resolve, reject) {  
-      cloudinary.uploader.upload(updatedBook.image.tempFilePath,function(result,err){
-        if(err){console.log(err);}
-        resolve(result);
-      });
-    });
-  }
-  let result = await uploader();
-  logger.info('cloudinary result', result);
-  updatedBook.image = result.url;
+      async function uploadImage(image) {
+        return new Promise((resolve, reject) => {
+            cloudinary.uploader.upload(image.tempFilePath, function (result, err) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(result);
+                }
+            });
+        });
+    }
+
+    let imageResult = await uploadImage(updatedBook.image);
+    let backgroundResult = await uploadImage(updatedBook.background);
+    
+   logger.info('cloudinary result', result);
+    updatedBook.image = imageResult.url;
+    pick.background = backgroundResult.url;
 
 
     this.store.editItem(this.collection, id, bookId, this.array, updatedBook);

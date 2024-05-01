@@ -27,30 +27,9 @@
       ]
     },
     {
-      "id": "370d2982-4a7f-49b4-a97e-0b81698a52ba",
+      "id": "505d0c6c-6f43-4368-8409-c53837c4afae",
       "bookName": "test",
-      "details": [
-        {
-          "author": "1",
-          "genre": "1",
-          "publicYear": "1",
-          "descript": "m",
-          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714522862/stiuunsz8q0urnufb0le.jpg",
-          "background": {
-            "name": "cover.jpg",
-            "data": {
-              "type": "Buffer",
-              "data": []
-            },
-            "size": 274248,
-            "encoding": "7bit",
-            "tempFilePath": "/app/tmp/tmp-10-1714522862638",
-            "truncated": false,
-            "mimetype": "image/jpeg",
-            "md5": "1c79334f61ede715db32de279d1b5fd8"
-          }
-        }
-      ]
+      "details": []
     }
   ]
 }
