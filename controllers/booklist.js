@@ -3,16 +3,19 @@
 import logger from '../utils/logger.js';
 import booklistStore from '../models/mycollection.js';
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const booklist = {                         // Creating an object named 'booklist' which contains a method 'createView'
   createView(request, response) {         // Method to handle rendering the 'booklist' view
     const booklistId = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.debug('Booklist id = ' + booklistId);
     
     const viewData = {
       title: 'Booklist',
-      singleBooklist: booklistStore.getBooklist(booklistId) // Fetching booklist data from 'booklistStore' based on id
-    };
+      singleBooklist: booklistStore.getBooklist(booklistId), // Fetching booklist data from 'booklistStore' based on id
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
+  };
 
     response.render('booklist', viewData); 
   },

@@ -1,4 +1,10 @@
 {
   "bookListsCollection": [
-      ]
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "3f7df527-b5e9-4d6d-ac89-df754fb54b5e",
+      "category": "mm",
+      "books": []
+    }
+  ]
 }

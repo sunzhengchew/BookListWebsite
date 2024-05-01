@@ -3,14 +3,17 @@
 import logger from "../utils/logger.js";
 import mypick from "../models/pick.js";
 import { v4 as uuidv4 } from 'uuid';
+import accounts from './accounts.js';
 
 const pickboard = {                        // Creating an object named 'pickboard' which contains a method 'createView'
   createView(request, response) {
     logger.info("Picklist page loading!");
+    const loggedInUser = accounts.getCurrentUser(request);
     
     const viewData = {
       title: "Picklist of Book",
-      picklists: mypick.getAllPicklists()  // Calling 'getAllPicklists' function in pick.js
+      picklists: mypick.getAllPicklists(),  // Calling 'getAllPicklists' function in pick.js
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     
     logger.debug(viewData.pickBookCollection);

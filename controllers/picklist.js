@@ -3,16 +3,19 @@
 import logger from "../utils/logger.js";
 import mypick from "../models/pick.js";
 import { v4 as uuidv4 } from "uuid";
+import accounts from './accounts.js';
 
 const picklist = {
   // Creating an object named 'picklist' which contains methods 'createView'
   createView(request, response) {
     const picklistId = request.params.id;
+    const loggedInUser = accounts.getCurrentUser(request);
     logger.debug("Picklist id = " + picklistId);
-
+    
     const viewData = {
       title: "Picklist",
       singlePicklist: mypick.getPicklist(picklistId), // Retrieving a specific picklist using the provided picklistId
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
 
     response.render("picklist", viewData); // Rendering the 'picklist' view with the specified data

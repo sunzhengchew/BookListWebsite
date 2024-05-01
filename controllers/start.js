@@ -2,11 +2,14 @@
 import logger from "../utils/logger.js";
 import creator from "../models/info.js";
 import booklistStore from '../models/mycollection.js';
+import accounts from './accounts.js';
 
 const start = {                                // Creating an object named 'start' which contains methods 'createView'
   createView(request, response) {
     logger.info("Start page loading!");
     const booklists = booklistStore.getAllBooklists(); // get details of the booklist by calling "getAllBooklists" method from mycollection.js
+    const loggedInUser = accounts.getCurrentUser(request);
+    
     let numBooklists = booklists.length; //amount of the booklist
     let checkBooklists = "";
     let numBooks = 0; //amount of the books
@@ -61,7 +64,8 @@ const start = {                                // Creating an object named 'star
       displayNumBooks:checkBooks,
       displayAvgBooks: avgBook,
       displayMaxBooklists: maxBooklists,
-      displayMinBooklists:minBooklists
+      displayMinBooklists:minBooklists,
+      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
     };
     
     //logger.debug(viewData);
