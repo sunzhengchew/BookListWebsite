@@ -27,8 +27,22 @@
       ]
     },
     {
-      "id": "505d0c6c-6f43-4368-8409-c53837c4afae",
+      "id": "1f49a38d-fab4-40ec-b65f-a75c019d9842",
       "bookName": "test",
+      "details": [
+        {
+          "id": "4fc15f7b-a756-4a2c-be90-6f94b20f2439",
+          "author": "q",
+          "genre": "q",
+          "publicYear": "111",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714531686/lyuvcv1rvbkjixw9mcwl.jpg",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714531687/neu3psppdwywvavfytis.jpg"
+        }
+      ]
+    },
+    {
+      "id": "57a591b5-29ae-4511-9a61-4664727e2530",
+      "bookName": "11",
       "details": []
     }
   ]
