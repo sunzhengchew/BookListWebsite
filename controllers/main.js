@@ -7,7 +7,7 @@ import accounts from './accounts.js';
 const main = {                                // Creating an object named 'start' which contains methods 'createView'
   createView(request, response) {
     logger.info("Start page loading!");
-    const booklists = booklistStore.getUserBooklists(loggedInUser.id); 
+    const booklists = booklistStore.getAllBooklists(); 
     
     let numBooklists = booklists.length; //amount of the booklist
     let checkBooklists = "";
@@ -63,8 +63,6 @@ const main = {                                // Creating an object named 'start
       displayAvgBooks: avgBook,
       displayMaxBooklists: maxBooklists,
       displayMinBooklists:minBooklists,
-      fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture, 
     };
     
     //logger.debug(viewData);

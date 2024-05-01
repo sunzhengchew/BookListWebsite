@@ -16,7 +16,6 @@ const picklist = {
       title: "Picklist",
       singlePicklist: mypick.getPicklist(picklistId), // Retrieving a specific picklist using the provided picklistId
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture, 
     };
 
     response.render("picklist", viewData); // Rendering the 'picklist' view with the specified data

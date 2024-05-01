@@ -14,7 +14,6 @@ const dashboard = {                          // Creating an object named 'dashbo
       title: "Booklist App Dashboard",
       booklists: booklistStore.getUserBooklists(loggedInUser.id),
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture, 
     };
     logger.info('about to render' + viewData.booklists);
     response.render('dashboard', viewData);

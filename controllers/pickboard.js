@@ -14,7 +14,6 @@ const pickboard = {                        // Creating an object named 'pickboar
       title: "Picklist of Book",
       picklists: mypick.getAllPicklists(),  // Calling 'getAllPicklists' function in pick.js
       fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-      picture: loggedInUser.picture, 
     };
     
     logger.debug(viewData.pickBookCollection);
