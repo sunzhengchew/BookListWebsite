@@ -31,6 +31,22 @@
           "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576490/plyrgus5t9me59avqmwh.png"
         }
       ]
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "8e268336-73b7-4e83-9719-2e8062ca244d",
+      "bookName": "special",
+      "details": [
+        {
+          "id": "91ba9673-b20e-4722-812b-1569a631d1c1",
+          "author": "test",
+          "genre": "test",
+          "publicYear": "1111",
+          "descript": "test",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714646224/n2wvhl7wicbnxyklhywy.webp",
+          "background": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714646224/e71vsuj7mshcr3aac1rb.webp"
+        }
+      ]
     }
   ]
 }

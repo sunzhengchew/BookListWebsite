@@ -41,6 +41,12 @@
           "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1714576440/zrskhu92s14hw0zitazo.webp"
         }
       ]
+    },
+    {
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "96663b01-c281-42b7-9f70-19d6f0c613e8",
+      "category": "test",
+      "books": []
     }
   ]
 }
