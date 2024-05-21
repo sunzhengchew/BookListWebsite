@@ -77,6 +77,13 @@
       "email": "test@test.com",
       "password": "test",
       "id": "908fc0a6-7411-491d-8b5b-90bf515003d7"
+    },
+    {
+      "firstName": "Rosanne",
+      "lastName": "Birney",
+      "email": "rb@gmail.com",
+      "password": "secret",
+      "id": "16fbd7d6-c79e-4dad-9dbc-875704b03425"
     }
   ]
 }
