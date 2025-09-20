@@ -58,6 +58,21 @@
       "id": "e746a030-6493-4061-b47c-b04d59a18853",
       "category": "ddw",
       "books": []
+    },
+    {
+      "userid": "3594c2ea-b506-4f2c-911e-31a1f58bf6b1",
+      "id": "54c89448-418d-4893-873c-f0ae636dbe03",
+      "category": "m",
+      "books": [
+        {
+          "id": "d7a9812d-7b5c-46aa-8dd3-779159332785",
+          "name": "l",
+          "author": "a",
+          "genre": "a",
+          "publicYear": "a",
+          "image": "http://res.cloudinary.com/sz-web-ca2/image/upload/v1758314769/j1repwpmhqwzrjt1coha.pdf"
+        }
+      ]
     }
   ]
 }
